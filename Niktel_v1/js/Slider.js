@@ -1,8 +1,9 @@
 $('.slideshow__slider').slick({
     slidesToShow: 1,
-    speed: 2000,
-    autoplay: true,
-    autoplaySpeed: 10000,
+    // speed: 2000,
+    speed: 1200,
+    // autoplay: true,
+    // autoplaySpeed: 10000,
     nextArrow: '.slideshow__next',
     prevArrow: '.slideshow__prev',
     dots: false,
