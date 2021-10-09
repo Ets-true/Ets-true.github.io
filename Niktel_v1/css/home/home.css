@@ -1,0 +1,21 @@
+
+body {
+    width: 100%;
+    position: relative;
+}
+.home {
+    font-family: "Open Sans", sans-serif;
+}
+.attantion_mobile{
+    display: none;
+}
+
+@media(max-width: 768px){
+    .home{
+    }
+    
+}
+
+
+
+
