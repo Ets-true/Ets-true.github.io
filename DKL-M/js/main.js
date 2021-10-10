@@ -32,30 +32,30 @@ $(function () {
 
 
 //Загрузка сайта/////////////////////////////////////
-var loading = document.querySelector('.loading');
-var loadingInfo = document.querySelector('.loading__info');
+// var loading = document.querySelector('.loading');
+// var loadingInfo = document.querySelector('.loading__info');
 
-const min = 0, max = 100, time = 1000;
-(function step(val) { 
-    setTimeout(function() {
-            document.querySelector('.loading__info_timer').textContent = val;
-            if (val < max) {
-                step(val + 1);
-            }
-    }, time / (max - min));
-})(min);
+// const min = 0, max = 100, time = 1000;
+// (function step(val) { 
+//     setTimeout(function() {
+//             document.querySelector('.loading__info_timer').textContent = val;
+//             if (val < max) {
+//                 step(val + 1);
+//             }
+//     }, time / (max - min));
+// })(min);
 
-setTimeout(function(){
-    loadingInfo.classList.add('opacity0')
-}, 2000);
+// setTimeout(function(){
+//     loadingInfo.classList.add('opacity0')
+// }, 2000);
 
-setTimeout(function(){
-    loading.classList.add('opacity0')
-}, 3500);
+// setTimeout(function(){
+//     loading.classList.add('opacity0')
+// }, 3500);
 
-setTimeout(function(){
-    loading.style.display = 'none'
-}, 7500)
+// setTimeout(function(){
+//     loading.style.display = 'none'
+// }, 7500)
 ////////////////////////////////////////////////////
        
 //Слайдер всего сайта///////////////////////////////
@@ -65,8 +65,8 @@ new fullpage('#fullpage', {
     verticalCentered: false,
     // scrollBar: true,
     scrollingSpeed: 1500,
-    fitToSection: false,
-    fitToSectionDelay: 0,
+    // fitToSection: false,
+    // fitToSectionDelay: 0,
     lazyLoading: false,
     // css3: false,
  
@@ -95,9 +95,12 @@ new fullpage('#fullpage', {
     maxWidth: 1800.00,
     scale: 1,
     scaleMobile: 1.00,
-    color: 0x089120,
-    opacity: 0.4,
-    backgroundColor: 0x12002a,
+    // color: 0xb8c12,
+    color: 0x36b03,
+    opacity: 0,
+    // backgroundColor: 0x0d001f,
+    backgroundColor: 0x12002A,
+    // backgroundColor: 0x12002a,
   })
   VANTA.NET({
     el: "#net_2",
@@ -106,11 +109,14 @@ new fullpage('#fullpage', {
     gyroControls: false,
     minHeight: 200.00,
     minWidth: 200.00,
+    maxWidth: 1800.00,
     scale: 1.00,
     scaleMobile: 1.00,
-    color: 0x089120,
+    // color: 0x089120,
+    color: 0x36b03,
     opacity: 0.4,
-    backgroundColor: 0x12002a,
+    // backgroundColor: 0x12002a,
+    backgroundColor: 0x12002A,
   })
 
 //////////////////////////////////////////////
