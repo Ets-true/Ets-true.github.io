@@ -64,11 +64,25 @@ new fullpage('#fullpage', {
     anchors: ['company', 'audit', 'computers', 'skud', 'trust', 'contacts'],
     verticalCentered: false,
     // scrollBar: true,
-    scrollingSpeed: 1500,
     // fitToSection: false,
     // fitToSectionDelay: 0,
     lazyLoading: false,
     // css3: false,
+
+    scrollingSpeed: 1200,
+    animateAnchor: false,
+    // fitToSectionDelay: 5000,
+    // easingcss3: 'none',
+    // parallaxOptions: {
+    //   type: 'none',
+    //   percentage: 0,
+    //   property: 'translate'
+    // },
+    // cardsOptions: {
+    //   perspective: 0,
+    //   fadeContent: false,
+    //   fadeBackground: false,
+    // },
  
     
   
@@ -104,6 +118,22 @@ new fullpage('#fullpage', {
   })
   VANTA.NET({
     el: "#net_2",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    maxWidth: 1800.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    // color: 0x089120,
+    color: 0x36b03,
+    opacity: 0.4,
+    // backgroundColor: 0x12002a,
+    backgroundColor: 0x12002A,
+  })
+  VANTA.NET({
+    el: "#net_3",
     mouseControls: true,
     touchControls: true,
     gyroControls: false,
