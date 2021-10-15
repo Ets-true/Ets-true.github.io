@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <div id=lottie-1></div>
+    
+    <!-- <div id=lottie-2></div> -->
+    <style>
+        body {
+            height: 10000px;
+        }
+        .wrap1{
+            /* height: 10000px; */
+        }
+        #lottie-1{
+            position: fixed;
+            top: 0;
+            /* margin: auto; */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+        }
+    </style>
+
+    <script src="jquery.min.js"> </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.0/lottie.js'></script>
+
+    <script>
+        var the1 = $(window);
+        var winHeight = the1.height();
+        var animDuration = winHeight * 16;
+
+        var animData = {
+            container: document.getElementById('lottie-1'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: false,
+            path: 'anim.json'
+        };
+
+
+        var anim = bodymovin.loadAnimation(animData);
+
+        function animatebodymovin(duration, animObject) {
+            var scrollPosition = the1.scrollTop();
+            var maxFrames = animObject.totalFrames;
+            var frame = (maxFrames / 100) * (scrollPosition / (duration / 100));
+            animObject.goToAndStop(frame, true);
+        }
+
+        $(window).scroll(function () {
+            animatebodymovin(animDuration, anim);
+            
+        });
+        
+    </script>
+    <!-- <script>
+        var the2 = $('#lottie-2');
+        var winHeight = theWindow.height();
+        var animDuration = winHeight * 16;
+        var animData = {
+            container: document.getElementById('lottie-2'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: false,
+            path: 'animation.json'
+        };
+        var anim = bodymovin.loadAnimation(animData);
+        $(window).scroll(function () {
+            animatebodymovin(animDuration, anim);
+        });
+        function animatebodymovin(duration, animObject) {
+            var scrollPosition = theWindow.scrollTop();
+            var maxFrames = animObject.totalFrames;
+            var frame = (maxFrames / 100) * (scrollPosition / (duration / 100));
+            animObject.goToAndStop(frame, true);
+        }
+    </script> -->
+</body>
+
+</html>
