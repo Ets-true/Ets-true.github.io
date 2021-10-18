@@ -474,16 +474,11 @@ aside{
 }
 
 .grid__example{
-    /* cursor: pointer; */
     width: 536px;
     height: 153px;
-
-    
-
     border-radius: 10px;
     border: 2px solid rgba(3, 158, 26, 0.8);
     position: relative;
-    
 }
 
 
@@ -583,7 +578,6 @@ img{
 .Computers{
     padding-top: 169px;
     padding-left: var(--paddingLeft);
-    /* background-color: green; */
 }
 
 .Computers__row {
@@ -1021,8 +1015,14 @@ img{
     transform: translateX(-50%);
     font-family: "Roboto-Regular";
     font-size: 20px;
-    opacity: 0.25;
+    opacity: 0;
     color: white;
+}
+
+.active_scroll{
+    /* opacity: 0.2 !important; */
+    opacity: 0.25 !important;
+    transition: all 1.2s;
 }
 
 
@@ -1033,15 +1033,165 @@ img{
     width: 1px;
     height: 0;
     background-color: white;
-    opacity: 0;
+    opacity: 0.2;
 }
 
-.active_scroll{
-    opacity: 0.2 !important;
+.active_scrollLine{
+    /* opacity: 0.2 !important; */
     height: 98px !important;
     bottom: 0px !important;
-    transition: all 1.2s;
+    transition: all 2s;
 }
+
+@media(min-width: 1440px) and (max-width: 1880px) {
+
+}
+
+@media(min-width: 2400px) {
+    :root{
+        --paddingLeft: 522px;
+    }
+
+    aside{
+        left: 142px;
+    }
+    
+    .sidebar__glassmorthizm{
+        left: 142px;
+    }
+
+    .sidebar__glow {
+        left: 142px;
+    }
+
+    .Audit__grid{
+        width: 1522px;
+        grid-row-gap: 94px;
+        grid-column-gap: 82px;
+    }
+    
+    .grid__example{
+        width: 714px;
+        height: 153px;
+    }
+    
+    .grid__name{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    
+    .Computers__row {
+        margin-left: -27px;
+    }
+    
+    .Computers__row::before {
+        width: 1600px;
+    }
+    
+    .Computers__step {
+        margin-right: 283px;
+    }
+    
+    .step__point {
+        font-size: 27px;
+    }
+    
+    .step__name {
+        font-size: 25px;
+    }
+    
+    .marginRight1{
+        margin-left: -81px;
+        margin-right: 343px;
+    }
+
+    .camera__image {
+        left: 405px;
+        width: 607px;
+        height: 320px;
+        background-size: 120% 100%;
+        background-position: 50% 50%;
+    }
+
+
+    .camera__mask{
+        width: 438px;
+    }
+    .camera__image:hover{
+        /* transform: scaleY(1.2) scaleX(1.05); */
+        background-position: 70% 50%;
+        background-size: 130% 110%;
+        transition: all 0.5s;
+    }
+    
+    .camera__info {
+
+        top: 533px;
+        left: 573px;
+        width: 676px;
+        height: 221px;
+
+        padding-top: 44px;
+        padding-left: 46px;
+        padding-right: 46px;
+    }
+
+    .skud__image {
+        left: 1632px;
+        width: 786px;
+        
+        background-size: 110% 100%;
+        background-position: 50% 50%;
+    }
+    .skud__image:hover {
+        background-size: 116% 106%;
+        transition: all 0.5s;
+    }
+
+    .skud__info {
+        
+        left: 1520px;
+        width: 865px;
+       
+    
+        border-radius: 10px;
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        background-color: rgba( 255, 255, 255, 0.06 );
+        /* background-color: red; */
+    
+        padding-top: 44px;
+        padding-left: 53px;
+        padding-right: 42px;
+    }
+
+    .dots{
+        left: 1150px;
+    }
+    
+    .dots2{
+        left: 1200px;
+    }
+
+    .contacts__info{
+        left: 479px;
+        width: 624px;
+    }   
+
+    .contacts__email::before {
+        width: 259px;
+    }
+    
+    
+    .contacts__phone::before {
+        width: 230px;
+    }
+
+
+
+}
+
 
 
 

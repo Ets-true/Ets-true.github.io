@@ -4,6 +4,7 @@
     var headerLinks = document.querySelector('.header__links');
 
     var scrollLine = document.querySelector('.scroll__line');
+    var scroll = document.querySelector('.scroll');
     
     setTimeout(function(){
         aside.classList.add('opacity1');
@@ -16,6 +17,10 @@
     }, 1500);
 
     setTimeout(function(){
+        scroll.classList.add('active_scroll');
+    }, 2500);
+
+    setTimeout(function(){
         loading.style.display = "none"
-        scrollLine.classList.add('active_scroll');
-    }, 3000);
+        scrollLine.classList.add('active_scrollLine');
+    }, 3500);

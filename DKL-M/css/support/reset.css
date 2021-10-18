@@ -142,6 +142,20 @@ img {
   display: none;
 }
 
+@media(min-width: 1440px) and (max-width: 1880px) {
+
+}
+
+@media(min-width: 2400px) {
+  h1 {
+    font-size: 55px;
+  }
+  p{
+    font-size: 25px;
+  }
+
+}
+
 
 /* @media(max-width: 768px){
     h1{
