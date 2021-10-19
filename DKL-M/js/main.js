@@ -225,7 +225,7 @@ new fullpage('#fullpage', {
 
 ///////////////////////////////////////////////////////////////
 
-var navItem = document.querySelectorAll('.nav__item')
+// var navItem = document.querySelectorAll('.nav__item')
 // var navGlow = document.querySelector('.nav__glow')
 
 // navItem[].onmouseover = function(e){
@@ -235,4 +235,18 @@ var navItem = document.querySelectorAll('.nav__item')
 
 // }
 
+
+$(window).on('resize',function(){location.reload();});
+
+$(window).bind('hashchange', function() {
+  var hash = window.location.hash;
+  if(hash != "#company") {
+    $('.scroll').removeClass("active_scroll")
+    $('.scroll__line').removeClass("active_scrollLine")
+  }
+  if(hash == "#company") {
+    $('.scroll').addClass("active_scroll")
+    $('.scroll__line').addClass("active_scrollLine")
+  }
+});
 

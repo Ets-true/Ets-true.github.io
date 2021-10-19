@@ -102,6 +102,7 @@ h1{
 }
 
 p{
+  margin-top: 20px;
   z-index: 100;
   font-family: 'Calibri';
   font-size: 23px;
@@ -142,8 +143,23 @@ img {
   display: none;
 }
 
-@media(min-width: 1440px) and (max-width: 1880px) {
 
+@media(min-width: 1440px) and (max-width: 1880px) {
+  h1 {
+    font-size: 37px;
+  }
+  p{
+    font-size: 17px;
+  }
+}
+
+@media(min-width: 1440px) and (max-width: 1880px) {
+  h1 {
+    font-size: 45px;
+  }
+  p{
+    font-size: 22px;
+  }
 }
 
 @media(min-width: 2400px) {

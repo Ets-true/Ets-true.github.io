@@ -1017,6 +1017,7 @@ img{
     font-size: 20px;
     opacity: 0;
     color: white;
+    transition: all 0.5s;
 }
 
 .active_scroll{
@@ -1034,6 +1035,7 @@ img{
     height: 0;
     background-color: white;
     opacity: 0.2;
+    transition: all 0.5s;
 }
 
 .active_scrollLine{
@@ -1043,11 +1045,131 @@ img{
     transition: all 2s;
 }
 
-@media(min-width: 1440px) and (max-width: 1880px) {
 
+
+@media(min-width: 1200px) and (max-width: 1640px) {
+    :root{
+        --paddingLeft: 336px;
+    }
+    aside{
+        top: 120px;
+        left: 75px;
+    }
+    
+    .sidebar__glassmorthizm{
+        top: 120px;
+        left: 75px;
+    }
+
+    .sidebar__glow {
+        top: 120px;
+        left: 75px;
+    }
+    .Audit__grid{
+        margin-top: 50px;
+        width: 804px;
+        grid-row-gap: 52px;
+        grid-column-gap: 52px;
+    }
+    
+    .grid__example{
+        width: 376px;
+        height: 118px;
+    }
+    
+    .grid__name{
+        font-size: 22px;
+        padding-top: 40px;
+    }
+    .Computers__row {
+        margin-bottom: 150px;
+        margin-left: -27px;
+    }
+    
+    .Computers__row::before {
+        width: 1150px;
+    }
+    
+    .Computers__step {
+        margin-right: 100px;
+    }
+    
+    .step__point {
+        font-size: 24px;
+    }
+    
+    .step__name {
+        font-size: 22px;
+    }
+    
+    .marginRight1{
+        margin-left: -20px;
+        margin-right: 100px;    
+    }
+
+    .camera__image {
+        left: 271px;
+        width: 313px;
+        height: 221px;
+
+        background-size: 120% 100%;
+        background-position: 50% 50%;
+    }
+
+
+    .camera__mask{
+        /* width: 438px; */
+    }
+    .camera__image:hover{
+        background-position: 70% 50%;
+        background-size: 130% 110%;
+        transition: all 0.5s;
+    }
+    
+    .camera__info {
+
+        top: 533px;
+        left: 336px;
+        width: 380px;
+        height: 171px;
+
+        padding-top: 44px;
+        padding-left: 46px;
+        padding-right: 46px;
+    }
+
+    .skud__image {
+        left: 900px;
+        width: 402px;
+
+        background-size: 110% 100%;
+        background-position: 50% 50%;
+    }
+
+    .skud__image:hover {
+        background-size: 116% 106%;
+        transition: all 0.5s;
+    }
+
+    .skud__info {
+        left: 838px;
+        width: 437px;
+
+        padding-top: 44px;
+        padding-left: 53px;
+        padding-right: 42px;
+    }
+
+    .dots{
+        left: 1150px;
+    }
+    
+    .dots2{
+        left: 1200px;
+    }
 }
 
-@media(min-width: 2400px) {
+@media(min-width: 2440px) {
     :root{
         --paddingLeft: 522px;
     }
@@ -1150,17 +1272,8 @@ img{
     }
 
     .skud__info {
-        
         left: 1520px;
         width: 865px;
-       
-    
-        border-radius: 10px;
-        backdrop-filter: blur( 4px );
-        -webkit-backdrop-filter: blur( 4px );
-        background-color: rgba( 255, 255, 255, 0.06 );
-        /* background-color: red; */
-    
         padding-top: 44px;
         padding-left: 53px;
         padding-right: 42px;
