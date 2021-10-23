@@ -22,16 +22,109 @@
     </header>
 
     <div class="main">
-        <div class="main__content">
-            <div class="quote">
-                <span class="black left">Every proble<span class="white">m has <span class="bold">a solution.</span> </span> </span>
-                <span class="white">The only difficu<span class="black">lty is to <span class="bold">find</span> it </span> </span>
+
+        <div class="section Jobs">
+            <div class="content_wrap">
+                <div class="quote">
+                    <span class="black left">Every proble<span class="white">m has <span class="bold">a solution.</span> </span> </span>
+                    <span class="white">The only difficu<span class="black">lty is to <span class="bold">find</span> it </span> </span>
+                </div>
+                <div class="iphone">
+                    <img src="media/iphone.png" alt="">
+                </div>
             </div>
-            <div class="iphone">
-                <img src="media/iphone.png" alt="">
-            </div>
+            
         </div>
+
+        <!-- <div class="lottie_scroll"> -->
+        <div class="lottie_wrap">
+            <div id="lottie-1" class="lottie_animation"></div>
+        </div>
+        <!-- </div> -->
+        <div class="next__wrap"></div>
         
     </div>
+
+
+
+    <script src="js/jquery.min.js"> </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.0/lottie.js'></script>
+
+    <script>
+   
+
+
+        var animData = {
+            container: document.getElementById('lottie-1'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: false,
+            path: 'lottie.json'
+        };
+        var anim = bodymovin.loadAnimation(animData);
+    
+            
+
+
+        var lottie_Wrap = $(".lottie_wrap");
+        var lottie_Wrap_Height = $(".lottie_wrap").height();
+        var lottie_Wrap_Position = $(".lottie_wrap").offset().top;
+
+        var animDuration = lottie_Wrap_Height;
+
+       
+        var lottie_Animation_Height = $('.lottie_animation').height();
+        var lottie_Animation_Height_2 = lottie_Animation_Height/2;
+
+
+        // var window = $(window);
+        var winHeight = $(window).height();
+
+        var scrollToElem = lottie_Wrap_Position + lottie_Animation_Height_2 - winHeight;
+        console.log(scrollToElem);
+        
+
+        
+        function animatebodymovin(duration, animObject) {
+            
+           
+            var winScrollTop = $(this).scrollTop();
+           
+            var scrollPosition = winScrollTop - scrollToElem;
+            
+            // console.log(winScrollTop);
+            // console.log(scrollToElem);
+            // console.log(scrollPosition);
+
+            if(scrollPosition >= 0){
+                var maxFrames = animObject.totalFrames;
+                var frame = (maxFrames / 100) * (scrollPosition / (duration / 100));
+                animObject.goToAndStop(frame, true);
+            }
+            
+            // console.log(scrollPosition, maxFrames, frame);
+        }
+
+        // $(window).scroll(function () {
+        //     animatebodymovin(animDuration, anim);
+        // });
+
+
+       
+        
+
+        // var scrollToElem = targetPos - winHeight - lottieHeight;
+
+        $(window).scroll(function(){
+            var winScrollTop = $(this).scrollTop();
+
+            // console.log(scrollToElem);
+            if(winScrollTop > scrollToElem) {
+                animatebodymovin(animDuration, anim);
+            }
+        });
+
+        
+    </script>
 </body>
 </html>

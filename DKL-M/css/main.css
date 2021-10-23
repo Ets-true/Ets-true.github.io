@@ -10,6 +10,11 @@ html{
     --paddingLeft: 416px;
 }
 
+/* #fullpage {
+    -webkit-transform: none !important;
+    transform: none !important;
+} */
+
 
 body{
     padding: 0;
@@ -416,6 +421,7 @@ aside{
     width: 100%;
     height: auto;
     margin-top: -80px;
+    z-index: 1;
 }
 
 .section{
@@ -435,7 +441,7 @@ aside{
 #particles-js{
     width: 100vw;
     height: 100vh;
-    z-index: 0;
+    z-index: -1;
     position: fixed;
 }
 
@@ -453,7 +459,6 @@ aside{
 .Company{
     padding-top: 344px;
     padding-left: var(--paddingLeft);
-    /* background-color: green; */
     position: relative;
 }
 
@@ -634,12 +639,14 @@ img{
     top: 400px;
     left: 819px;
     display: flex;
+    z-index: 2;
 }
 
 .dots2{
     /* transform: translateZ(-10px); */
     top: 626px;
     left: 850px;
+    z-index: 2;
 }
 
 .dot{
@@ -700,9 +707,10 @@ img{
     transition: backdrop-filter 1s;
     /* background-color: red; */
 
-    padding-top: 44px;
+    padding-top: 24px;
     padding-left: 46px;
     padding-right: 46px;
+    z-index: 100;
 }
 .skud__image {
     transition: all 0.5s;
@@ -731,11 +739,11 @@ img{
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     background-color: rgba( 255, 255, 255, 0.06 );
-    /* background-color: red; */
 
-    padding-top: 44px;
+    padding-top: 24px;
     padding-left: 53px;
     padding-right: 42px;
+    z-index: 100;
 }
 
 
@@ -940,12 +948,9 @@ img{
     height: 320px;
 
     border-radius: 10px;
-    /* background: rgba( 255, 255, 255, 0.1 ); */
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     background-color: rgba( 255, 255, 255, 0.06 );
-    /* -webkit-backdrop-filter: blur( 4px ); */
-    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
     border: 2px solid rgb(0, 192, 29, 0.6);
     
     transition: backdrop-filter 2s;
@@ -1046,8 +1051,7 @@ img{
 }
 
 
-
-@media(min-width: 1200px) and (max-width: 1640px) {
+@media(min-width: 1024px) and (max-width: 1440px) {
     :root{
         --paddingLeft: 336px;
     }
@@ -1065,6 +1069,11 @@ img{
         top: 120px;
         left: 75px;
     }
+
+    .Company{
+        padding-top: 294px;
+    }
+
     .Audit__grid{
         margin-top: 50px;
         width: 804px;
@@ -1169,6 +1178,159 @@ img{
     }
 }
 
+
+@media(min-width: 1440px) and (max-width: 1640px) {
+    :root{
+        --paddingLeft: 336px;
+    }
+    aside{
+        top: 120px;
+        left: 75px;
+    }
+    
+    .sidebar__glassmorthizm{
+        top: 120px;
+        left: 75px;
+    }
+
+    .sidebar__glow {
+        top: 120px;
+        left: 75px;
+    }
+
+    .Company{
+        padding-top: 294px;
+    }
+
+    .Audit__grid{
+        margin-top: 50px;
+        width: 804px;
+        grid-row-gap: 52px;
+        grid-column-gap: 52px;
+    }
+    
+    .grid__example{
+        width: 376px;
+        height: 118px;
+    }
+    
+    .grid__name{
+        font-size: 22px;
+        padding-top: 40px;
+    }
+    .Computers__row {
+        margin-bottom: 150px;
+        margin-left: -100px;
+    }
+    
+    .Computers__row::before {
+        width: 1150px;
+    }
+    
+    .Computers__step {
+        margin-right: 100px;
+    }
+    
+    .step__point {
+        font-size: 24px;
+    }
+    
+    .step__name {
+        font-size: 22px;
+    }
+    
+    .marginRight1{
+        margin-left: -20px;
+        margin-right: 100px;    
+    }
+
+    .camera__image {
+        left: 271px;
+        width: 313px;
+        height: 221px;
+
+        background-size: 120% 100%;
+        background-position: 50% 50%;
+    }
+
+
+    .camera__mask{
+        width: 247px;
+        height: 72px;
+    }
+    .camera__image:hover{
+        background-position: 70% 50%;
+        background-size: 130% 110%;
+        transition: all 0.5s;
+    }
+    
+    .camera__info {
+
+        top: 450px;
+        left: 336px;
+        width: 380px;
+        height: 171px;
+
+        padding-top: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .skud__image {
+        left: 900px;
+        width: 402px;
+        height: 198px;
+
+        background-size: 110% 100%;
+        background-position: 50% 50%;
+    }
+
+    .skud__image:hover {
+        background-size: 116% 106%;
+        transition: all 0.5s;
+    }
+
+    .skud__info {
+        top: 400px;
+        left: 838px;
+        width: 437px;
+
+        padding-top: 28px;
+        padding-left: 25px;
+        padding-right: 15px;
+    }
+
+    .dots{
+        display: none;
+    }
+    
+    .Trust__wrap{
+        margin-left: -100px;
+    }
+
+    .thank {
+        margin-bottom: 50px;
+    }
+    .certifications__gorizontal {
+        margin-left: 30px;
+    }
+    .certification__gorizontal {
+        margin-bottom: 50px;
+    }
+
+    .certification__vertical {
+        margin-left: 30px;
+    }
+
+    .contacts__info{
+        left: 320px;
+    }   
+}
+
+
+
+
+
 @media(min-width: 2440px) {
     :root{
         --paddingLeft: 522px;
@@ -1254,7 +1416,7 @@ img{
         width: 676px;
         height: 221px;
 
-        padding-top: 44px;
+        padding-top: 24px;
         padding-left: 46px;
         padding-right: 46px;
     }
@@ -1274,7 +1436,7 @@ img{
     .skud__info {
         left: 1520px;
         width: 865px;
-        padding-top: 44px;
+        padding-top: 24px;
         padding-left: 53px;
         padding-right: 42px;
     }
@@ -1300,6 +1462,8 @@ img{
     .contacts__phone::before {
         width: 230px;
     }
+
+   
 
 
 
