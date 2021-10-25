@@ -3,18 +3,10 @@ html{
 }
 
 :root{
-    /* --blackberry: #0d001f; */
     --blackberry: #12002A;
     --green: #00c01d;
-    /* --green: rgb(0, 192, 29, 1); */
     --paddingLeft: 416px;
 }
-
-/* #fullpage {
-    -webkit-transform: none !important;
-    transform: none !important;
-} */
-
 
 body{
     padding: 0;
@@ -190,9 +182,6 @@ header{
 
 
 aside{
-    /* transform-style: preserve-3d;
-    transform: translateZ(0); */
-    /* z-index: 0; */
     z-index: 100;
     position: fixed;
     top: 177px;
@@ -200,15 +189,7 @@ aside{
     width: 88px;
     height: 614px;
     padding-top: 24px;
-    /* background: rgba( 255, 255, 255, 0.1 );
-    box-shadow: 0px 0px 24px #00000029;
-    backdrop-filter: blur( 8px );
-    -webkit-backdrop-filter: blur( 4px ); */
-    /* border: 1px solid rgba( 255, 255, 255, 0.18 );  
-    border: 0; */
-    /* border-radius: 10px; */
     opacity: 0;
-    
 }
 
 .sidebar__glassmorthizm{
@@ -1051,7 +1032,7 @@ img{
 }
 
 
-@media(min-width: 1024px) and (max-width: 1440px) {
+/* @media(min-width: 1024px) and (max-width: 1440px) {
     :root{
         --paddingLeft: 336px;
     }
@@ -1127,7 +1108,7 @@ img{
 
 
     .camera__mask{
-        /* width: 438px; */
+        
     }
     .camera__image:hover{
         background-position: 70% 50%;
@@ -1176,10 +1157,10 @@ img{
     .dots2{
         left: 1200px;
     }
-}
+} */
 
 
-@media(min-width: 1440px) and (max-width: 1640px) {
+/* @media(min-width: 1440px) and (max-width: 1640px) {
     :root{
         --paddingLeft: 336px;
     }
@@ -1325,37 +1306,649 @@ img{
     .contacts__info{
         left: 320px;
     }   
+} */
+
+@media(max-width: 1919px){
+    :root{
+        --paddingLeft: calc(220px + (416 - 220) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    header{
+        height: calc(42px + (80 - 42) * ((100vw - 1024px) / (1920 - 1024)));
+        padding-left: calc(67px + (126 - 67) * ((100vw - 1024px) / (1920 - 1024)));
+        padding-right: calc(74px + (140 - 74) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .header__logo {
+        width: auto;
+        height: auto;
+        top: 50%;
+        transform: translate(0,-50%);
+    }
+    
+    .header__img {
+        margin-top: 5px;
+        width: calc(15px + (29 - 15) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(20px + (39 - 20) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .header__name {
+        margin-left: calc(9px + (18 - 9) * ((100vw - 1024px) / (1920 - 1024)));
+        font-size: calc(10px + (20 - 10) * ((100vw - 1024px) / (1920 - 1024)));
+        line-height: calc(14px + (26 - 14) * ((100vw - 1024px) / (1920 - 1024)));
+        width: calc(212px + (400 - 212) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .header__links {
+        position: absolute;
+        top: 50%; 
+        right: calc(74px + (140 - 74) * ((100vw - 1024px) / (1920 - 1024)));
+        transform: translate(0, -50%);
+    }
+    
+    .header__link{
+        font-size: calc(10px + (20 - 10) * ((100vw - 1024px) / (1920 - 1024)));
+        margin-left: calc(35px + (67 - 35) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .header__blur {
+        position: fixed;
+        top: calc(15px + (28 - 15) * ((100vw - 1024px) / (1920 - 1024)));
+        right: calc(77px + (145 - 77) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .Security__blur {
+        width: calc(59px + (112 - 59) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(8px + (16 - 8) * ((100vw - 1024px) / (1920 - 1024)));
+        border-radius: calc(26px + (50 - 26) * ((100vw - 1024px) / (1920 - 1024)));
+        margin-top: calc(3px + (5 - 3) * ((100vw - 1024px) / (1920 - 1024)))px;
+    }
+    
+    .Sites__blur {
+        width: calc(26px + (50 - 26) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(13px + (25 - 13) * ((100vw - 1024px) / (1920 - 1024)));
+        border-radius: calc(12px + (23 - 12) * ((100vw - 1024px) / (1920 - 1024)));
+        margin-left: calc(45px + (85 - 45) * ((100vw - 1024px) / (1920 - 1024)));
+        margin-top: calc(1px + (2 - 1) * ((100vw - 1024px) / (1920 - 1024)));;
+    }
+
+    aside{
+        position: fixed;
+        top: calc(94px + (177 - 94) * ((100vw - 1024px) / (1920 - 1024)));
+        left: calc(51px + (96 - 51) * ((100vw - 1024px) / (1920 - 1024)));
+        width: calc(47px + (88 - 47) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(325px + (614 - 325) * ((100vw - 1024px) / (1920 - 1024)));
+        padding-top:  calc(13px + (24 - 13) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .sidebar__glassmorthizm{
+        position: fixed;
+        top:  calc(90px + (170 - 90) * ((100vw - 1024px) / (1920 - 1024)));
+        left: calc(51px + (96 - 51) * ((100vw - 1024px) / (1920 - 1024)));
+        width: calc(47px + (88 - 47) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(325px + (614 - 325) * ((100vw - 1024px) / (1920 - 1024)));
+        padding-top:  calc(13px + (24 - 13) * ((100vw - 1024px) / (1920 - 1024)));
+        border-radius: calc(5px + (10 - 5) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .nav__item{
+        position: relative;
+        width: 100%;
+        height: calc(21px + (40 - 21) * ((100vw - 1024px) / (1920 - 1024)));
+        margin-bottom: calc(34px + (64 - 34) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .nav__link{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .icon__Company{
+        margin: auto;
+        margin-top: 0;
+        width: calc(18px + (35 - 18) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(18px + (35 - 18) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .icon__Audit{
+        cursor: pointer;
+        margin: auto;
+        transform: translateY(calc(4px + (7 - 4) * ((100vw - 1024px) / (1920 - 1024))));
+        width: calc(17px + (33 - 17) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(17px + (33 - 17) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .icon__Computers{
+        margin: auto;
+        transform: translateY(calc(7px + (13 - 7) * ((100vw - 1024px) / (1920 - 1024))));
+        width: calc(17px + (33 - 17) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(14px + (27 - 14) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .icon__Skud{
+        margin: auto;
+        transform: translate(calc(2px + (3 - 2) * ((100vw - 1024px) / (1920 - 1024))), calc(6px + (12 - 6) * ((100vw - 1024px) / (1920 - 1024))));
+        width: calc(19px + (36 - 19) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(14px + (27 - 14) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .icon__Trust{
+        margin: auto;
+        transform: translateY(calc(6px + (12 - 6) * ((100vw - 1024px) / (1920 - 1024))));
+        width: calc(20px + (38 - 20) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(13px + (24 - 13) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .icon__Contacts{
+        margin: auto;
+        transform: translateY(calc(4px + (8 - 4) * ((100vw - 1024px) / (1920 - 1024))));
+        width: calc(17px + (33 - 17) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(10px + (20 - 10) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .nav__item:hover{
+        transform: translateY(-calc(2px + (5 - 2) * ((100vw - 1024px) / (1920 - 1024))));
+    }
+    
+    .nav__item:not(:hover){
+        transform: translateY(0px);
+    }
+    
+    .nav__name{
+        text-align: center;
+        margin: 0;
+        line-height: calc(8px + (16 - 8) * ((100vw - 1024px) / (1920 - 1024)));
+        font-size: calc(6px + (12 - 6) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    
+    
+    .hover_Audit{
+        transform: translateY(calc(4px + (7 - 4) * ((100vw - 1024px) / (1920 - 1024))));
+    }
+    .hover_Computers{
+        transform: translateY(calc(9px + (17 - 9) * ((100vw - 1024px) / (1920 - 1024))));
+    }
+    .hover_Skud{
+        transform: translateY(calc(8px + (16 - 8) * ((100vw - 1024px) / (1920 - 1024))));
+    }
+    .hover_Trust{
+        transform: translateY(calc(8px + (16 - 8) * ((100vw - 1024px) / (1920 - 1024))));
+    }
+    .hover_Contacts{
+        transform: translateY(calc(6px + (12 - 6) * ((100vw - 1024px) / (1920 - 1024))));
+    }
+    
+    
+    
+    .sidebar__glow {
+        position: fixed;
+        top: calc(94px + (177 - 94) * ((100vw - 1024px) / (1920 - 1024)));
+        left: calc(51px + (96 - 51) * ((100vw - 1024px) / (1920 - 1024)));
+        width: calc(47px + (88 - 47) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(325px + (614 - 325) * ((100vw - 1024px) / (1920 - 1024)));
+        padding-top: calc(13px + (24 - 13) * ((100vw - 1024px) / (1920 - 1024)));
+        padding-bottom: calc(24px + (45 - 24) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+
+    .glow {
+        width: calc(24px + (46 - 24) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(24px + (46 - 24) * ((100vw - 1024px) / (1920 - 1024)));
+        margin: auto;
+        margin-bottom: calc(34px + (64 - 34) * ((100vw - 1024px) / (1920 - 1024)));
+        border-radius: calc(5px + (10 - 5) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+
+    .glow__Company {
+        transform: translateY(-calc(4px + (7 - 4) * ((100vw - 1024px) / (1920 - 1024))));
+        
+    }
+    .glow__Audit {
+        transform: translateY(-calc(6px + (11 - 6) * ((100vw - 1024px) / (1920 - 1024))));
+       
+    }
+
+    .glow__Computers {
+        transform: translateY(-calc(6px + (11 - 6) * ((100vw - 1024px) / (1920 - 1024))));
+        
+    }
+    .glow__Skud {
+        transform: translateY(-calc(8px + (15 - 8) * ((100vw - 1024px) / (1920 - 1024))));
+        
+    }
+    .glow__Trust {
+        transform: translateY(-calc(13px + (25 - 13) * ((100vw - 1024px) / (1920 - 1024))));
+
+    }
+    .glow__Contacts {
+        transform: translateY(-calc(19px + (35 - 19) * ((100vw - 1024px) / (1920 - 1024))));
+    }
+
+    .main{
+        width: 100%;
+        height: auto;
+        margin-top: -calc(42px + (80 - 42) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .section{
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    #particles-js{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+    }
+    
+    .Company{
+        padding-top: calc(182px + (344 - 182) * ((100vw - 1024px) / (1920 - 1024)));
+        padding-left: var(--paddingLeft);
+        position: relative;
+    }
+    
+    .Audit{
+        padding-top: calc(81px + (153 - 81) * ((100vw - 1024px) / (1920 - 1024)));
+        padding-left: var(--paddingLeft);
+    }
+    
+    .Audit__grid{
+        margin-top: calc(45px + (85 - 45) * ((100vw - 1024px) / (1920 - 1024)));
+        width: calc(605px + (1142 - 605) * ((100vw - 1024px) / (1920 - 1024)));
+        grid-row-gap: calc(37px + (70 - 37) * ((100vw - 1024px) / (1920 - 1024)));
+        grid-column-gap: calc(42px + (80 - 42) * ((100vw - 1024px) / (1920 - 1024)));
+        position: relative;
+    }
+    
+    .grid__example{
+        width: calc(284px + (536 - 284) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(81px + (153 - 81) * ((100vw - 1024px) / (1920 - 1024)));
+        border-radius: calc(5px + (10 - 5) * ((100vw - 1024px) / (1920 - 1024)));
+        border: calc(1px + (2 - 1) * ((100vw - 1024px) / (1920 - 1024))) solid rgba(3, 158, 26, 0.8);
+        position: relative;
+    }
+    
+    .grid__name{
+        width: 100%;
+        height: 100%;
+        font-size: calc(12px + (23 - 12) * ((100vw - 1024px) / (1920 - 1024)));
+        text-align: center;
+        padding-top: calc(30px + (57 - 30) * ((100vw - 1024px) / (1920 - 1024)));
+        border-radius:  calc(5px + (10 - 5) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+
+    .Computers{
+        padding-top: calc(90px + (169 - 90) * ((100vw - 1024px) / (1920 - 1024)));
+        padding-left: var(--paddingLeft);
+    }
+    
+    .Computers__row {
+        width: auto;
+        margin-top: calc(68px + (129 - 68) * ((100vw - 1024px) / (1920 - 1024)));
+        margin-left: -calc(34px + (65 - 34) * ((100vw - 1024px) / (1920 - 1024)));
+        margin-bottom: calc(95px + (180 - 95) * ((100vw - 1024px) / (1920 - 1024)));
+        position: relative;
+    }
+    
+    .Computers__row::before {
+        content: '';
+        position: absolute;
+        top: calc(26px + (50 - 26) * ((100vw - 1024px) / (1920 - 1024))); 
+        left: 0;
+        width: calc(681px + (1285 - 681) * ((100vw - 1024px) / (1920 - 1024)));
+        height: 1px;
+    }
+    
+    .Computers__step {
+        margin-right: calc(88px + (167 - 88) * ((100vw - 1024px) / (1920 - 1024)));
+        display: flex;
+    }
+    
+    .step__point {
+        font-size: calc(13px + (25 - 13) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .step__name {
+        font-size: calc(12px + (23 - 12) * ((100vw - 1024px) / (1920 - 1024)));
+        margin-left: calc(10px + (20 - 10) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .marginRight1{
+        margin-left: -calc(37px + (70 - 37) * ((100vw - 1024px) / (1920 - 1024)));
+        margin-right: calc(117px + (220 - 117) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    
+    .Skud{
+        padding-top: calc(89px + (169 - 89) * ((100vw - 1024px) / (1920 - 1024)));
+        padding-left: var(--paddingLeft);
+        position: relative;
+    }
+    
+    .dots{
+        position: absolute;
+        top: calc(212px + (400 - 212) * ((100vw - 1024px) / (1920 - 1024)));
+        left: calc(434px + (819 - 434) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .dots2{
+        top:  calc(332px + (626 - 332) * ((100vw - 1024px) / (1920 - 1024)));
+        left: calc(450px + (850 - 450) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .dot{
+        width: calc(5px + (10 - 5) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(5px + (10 - 5) * ((100vw - 1024px) / (1920 - 1024)));
+        border-radius: calc(3px + (5 - 3) * ((100vw - 1024px) / (1920 - 1024)));
+        margin-right: calc(10px + (20 - 10) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .camera__image {
+        position: absolute;
+        top: calc(160px + (302 - 160) * ((100vw - 1024px) / (1920 - 1024)));
+        left: calc(161px + (304 - 161) * ((100vw - 1024px) / (1920 - 1024)));
+        width: calc(241px + (455 - 241) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(170px + (320 - 170) * ((100vw - 1024px) / (1920 - 1024)));
+        border-radius: calc(5px + (10 - 5) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    .camera__wrap{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .camera__mask{
+        width: calc(174px + (329 - 174) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(47px + (89 - 47) * ((100vw - 1024px) / (1920 - 1024)));
+        position: absolute;
+        border-top-left-radius: calc(4px + (7 - 4) * ((100vw - 1024px) / (1920 - 1024)));
+        bottom: 0;
+        right: 0;
+    }
+    
+    
+    .camera__info {
+        position: absolute;
+        top: calc(282px + (533 - 282) * ((100vw - 1024px) / (1920 - 1024)));
+        left: calc(228px + (430 - 228) * ((100vw - 1024px) / (1920 - 1024)));
+        width: calc(291px + (550 - 291) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(117px + (221 - 117) * ((100vw - 1024px) / (1920 - 1024)));
+    
+        border-radius: calc(5px + (10 - 5) * ((100vw - 1024px) / (1920 - 1024)));
+       
+        padding-top: calc(13px + (24 - 13) * ((100vw - 1024px) / (1920 - 1024)));
+        padding-left: calc(24px + (46 - 24) * ((100vw - 1024px) / (1920 - 1024)));
+        padding-right: calc(24px + (46 - 24) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+
+    .skud__image {
+        position: absolute;
+        top: calc(119px + (225 - 119) * ((100vw - 1024px) / (1920 - 1024)));
+        left: calc(649px + (1224 - 649) * ((100vw - 1024px) / (1920 - 1024)));
+        width: calc(309px + (584 - 309) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(152px + (287 - 152) * ((100vw - 1024px) / (1920 - 1024)));
+        border-radius: calc(5px + (10 - 5) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .skud__info {
+        position: absolute;
+        top: calc(301px + (568 - 301) * ((100vw - 1024px) / (1920 - 1024)));
+        left: calc(604px + (1139 - 604) * ((100vw - 1024px) / (1920 - 1024)));
+        width: calc(344px + (649 - 344) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(117px + (221 - 117) * ((100vw - 1024px) / (1920 - 1024)));
+    
+        padding-top: calc(23px + (24 - 23) * ((100vw - 1024px) / (1920 - 1024)));
+        padding-left: calc(28px + (53 - 28) * ((100vw - 1024px) / (1920 - 1024)));
+        padding-right: calc(22px + (42 - 22) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+
+    .Trust{
+        padding-top: calc(65px + (123 - 65) * ((100vw - 1024px) / (1920 - 1024)));
+        padding-left: var(--paddingLeft);
+    }
+    .Trust__wrap{
+        margin-top:calc(67px + (126 - 67) * ((100vw - 1024px) / (1920 - 1024)));
+        margin-left: -calc(24px + (45 - 24) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .thank {
+        width: calc(248px + (468 - 248) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(46px + (87 - 46) * ((100vw - 1024px) / (1920 - 1024)));
+        border-radius: calc(5px + (10 - 5) * ((100vw - 1024px) / (1920 - 1024)));
+        border: calc(1px + (2 - 1) * ((100vw - 1024px) / (1920 - 1024))) solid rgb(0, 192, 29, 0.6);
+        margin-bottom: calc(27px + (52 - 27) * ((100vw - 1024px) / (1920 - 1024)));
+        position: relative;
+    }
+    
+    .thank__info{
+        font-size: calc(11px + (20 - 11) * ((100vw - 1024px) / (1920 - 1024)));
+        position: absolute;
+        top: 50%;
+        left: calc(21px + (40 - 21) * ((100vw - 1024px) / (1920 - 1024)));
+        transform: translate(0, -50%)
+    }
+    
+    
+    .thank__arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: calc(176px + (332 - 176) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    .arrow__line {
+        width: calc(41px + (77 - 41) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(1px + (2 - 1) * ((100vw - 1024px) / (1920 - 1024)));
+        margin-top: calc(2px + (3 - 2) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    .arrow__triangle {
+        width: 0;
+        height: 0;
+        border-top: calc(2px + (4 - 2) * ((100vw - 1024px) / (1920 - 1024))) solid transparent;
+        border-left: calc(5px + (9 - 5) * ((100vw - 1024px) / (1920 - 1024))) solid white;
+        border-bottom: calc(2px + (4 - 2) * ((100vw - 1024px) / (1920 - 1024))) solid transparent;
+        border-radius: 1px;
+    }
+    
+    .thank:hover .arrow__line {
+        width: calc(48px + (90 - 48) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    
+    .certifications__gorizontal {
+        margin-left: calc(83px + (157 - 83) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    
+    .certification__gorizontal {
+        margin-bottom: calc(27px + (52 - 27) * ((100vw - 1024px) / (1920 - 1024)));
+        width: calc(230px + (434 - 230) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(83px + (157 - 83) * ((100vw - 1024px) / (1920 - 1024)));
+        border-radius: calc(5px + (10 - 5) * ((100vw - 1024px) / (1920 - 1024)));
+        border: calc(1px + (2 - 1) * ((100vw - 1024px) / (1920 - 1024))) solid rgb(0, 192, 29, 0.6);
+    }
+    
+    .certification__gorizontal:hover .arrow__line{
+        width: calc(48px + (90 - 48) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    .certification__wrap{
+        width: calc(248px + (468 - 248) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(46px + (87 - 46) * ((100vw - 1024px) / (1920 - 1024)));
+        position: relative;
+    }
+    
+    .certification__wrap .thank__info{
+        left: calc(14px + (26 - 14) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    .certification__wrap .thank__arrow{
+        left: calc(159px + (300 - 159) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .certification__image{
+        width: calc(203px + (383 - 203) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(23px + (44 - 23) * ((100vw - 1024px) / (1920 - 1024)));
+        margin: auto;
+        margin-top: calc(4px + (7 - 4) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .certification__vertical {
+        margin-left: calc(28px + (52 - 28) * ((100vw - 1024px) / (1920 - 1024))); 
+        width: calc(137px + (258 - 137) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(194px + (366 - 194) * ((100vw - 1024px) / (1920 - 1024)));
+        border-radius: calc(5px + (10 - 5) * ((100vw - 1024px) / (1920 - 1024)));
+        border: calc(1px + (2 - 1) * ((100vw - 1024px) / (1920 - 1024))) solid rgb(0, 192, 29, 0.6);
+    }
+    
+    .certification__vertical .certification__wrap{
+        width: calc(129px + (243 - 129) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(69px + (131 - 69) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .certification__vertical .thank__info{
+        top: calc(21px + (40 - 21) * ((100vw - 1024px) / (1920 - 1024)));
+        left: calc(3px + (6 - 3) * ((100vw - 1024px) / (1920 - 1024)));
+        width: 100%;
+        text-align: center;
+    }
+    
+    .certification__vertical .thank__arrow{
+        top: calc(48px + (90 - 48) * ((100vw - 1024px) / (1920 - 1024)));
+        left: calc(41px + (78 - 41) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .certification__vertical .certification__image{
+        width: calc(91px + (171 - 91) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(110px + (207 - 110) * ((100vw - 1024px) / (1920 - 1024)));
+        margin-top: 0;
+    }
+    
+    
+    .certification__vertical:hover .arrow__line{
+        width: calc(48px + (90 - 48) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    
+    
+    
+    .Contacts{
+        padding-top: calc(87px + (164 - 87) * ((100vw - 1024px) / (1920 - 1024)));
+        padding-left: var(--paddingLeft);
+        position: relative;
+    }
+    
+    .contacts__info{
+        position: absolute;
+        top: calc(153px + (288 - 153) * ((100vw - 1024px) / (1920 - 1024)));
+        left: calc(197px + (371 - 197) * ((100vw - 1024px) / (1920 - 1024)));
+        width: calc(248px + (468 - 248) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(170px + (320 - 170) * ((100vw - 1024px) / (1920 - 1024)));
+    
+        border-radius: calc(5px + (10 - 5) * ((100vw - 1024px) / (1920 - 1024)));
+        border: calc(1px + (2 - 1) * ((100vw - 1024px) / (1920 - 1024))) solid rgb(0, 192, 29, 0.6);
+    
+        padding-top: calc(15px + (28 - 15) * ((100vw - 1024px) / (1920 - 1024)));
+        padding-left: calc(24px + (45 - 24) * ((100vw - 1024px) / (1920 - 1024)));
+    }   
+    
+    .contacts__title {
+        font-size: calc(13px + (25 - 13) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    .contacts__email {
+        height: auto;
+        margin-top: calc(35px + (67 - 35) * ((100vw - 1024px) / (1920 - 1024)));
+        font-size: calc(12px + (23 - 12) * ((100vw - 1024px) / (1920 - 1024)));
+        position: relative;
+    }
+    .contacts__email::before {
+        content: '';
+        position: absolute;
+        left: calc(100px + (188 - 100) * ((100vw - 1024px) / (1920 - 1024)));
+        top: 50%;
+        transform: translate(0, -50%);
+        width: calc(87px + (164 - 87) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(1px + (2 - 1) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .contacts__phone {
+        height: auto;
+        margin-top: calc(30px + (57 - 30) * ((100vw - 1024px) / (1920 - 1024)));
+        font-size: calc(12px + (22 - 12) * ((100vw - 1024px) / (1920 - 1024)));
+        position: relative;
+    }
+    
+    .contacts__phone::before {
+        content: '';
+        position: absolute;
+        left: calc(114px + (215 - 114) * ((100vw - 1024px) / (1920 - 1024)));
+        top: 50%;
+        transform: translate(0, -50%);
+        width: calc(72px + (135 - 72) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(1px + (2 - 1) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    
+    .copyright{
+        position: absolute;
+        bottom: calc(34px + (64 - 34) * ((100vw - 1024px) / (1920 - 1024)));
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: calc(9px + (18 - 9) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .scroll{
+        position: absolute;
+        bottom: calc(59px + (112 - 59) * ((100vw - 1024px) / (1920 - 1024)));
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: calc(11px + (20 - 11) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .scroll__line{
+        position: absolute;
+        left: 50%;
+        bottom: calc(52px + (98 - 52) * ((100vw - 1024px) / (1920 - 1024)));
+        width: 1px;
+        height: 0;
+    }
+    
+    .active_scrollLine{
+        /* opacity: 0.2 !important; */
+        height: calc(52px + (98 - 52) * ((100vw - 1024px) / (1920 - 1024))) !important;
+        bottom: 0px !important;
+    }
+
+    
 }
-
-
 
 
 
 @media(min-width: 2440px) {
     :root{
-        --paddingLeft: 522px;
+        --paddingLeft:  calc(416px + (522 - 416) * ((100vw - 1920px) / (2560 - 1920)));
     }
 
     aside{
-        left: 142px;
+        left: calc(96px + (142 - 96) * ((100vw - 1920px) / (2560 - 1920)));
     }
     
     .sidebar__glassmorthizm{
-        left: 142px;
+        left: calc(96px + (142 - 96) * ((100vw - 1920px) / (2560 - 1920)));
     }
 
     .sidebar__glow {
-        left: 142px;
+        left: calc(96px + (142 - 96) * ((100vw - 1920px) / (2560 - 1920)));
     }
 
     .Audit__grid{
-        width: 1522px;
-        grid-row-gap: 94px;
-        grid-column-gap: 82px;
+        width: calc(1142px + (1522 - 1142) * ((100vw - 1920px) / (2560 - 1920)));
+        grid-row-gap: calc(70px + (90 - 70) * ((100vw - 1920px) / (2560 - 1920)));
+        grid-column-gap: calc(80px + (82 - 80) * ((100vw - 1920px) / (2560 - 1920)));
     }
     
     .grid__example{
-        width: 714px;
+        width: calc(536px + (714 - 536) * ((100vw - 1920px) / (2560 - 1920)));
         height: 153px;
     }
     
