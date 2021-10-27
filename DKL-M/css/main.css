@@ -1396,6 +1396,7 @@ img{
         position: relative;
         height: 100vh;
         margin-top: calc(55px + (70 - 55) * ((70vw - 375px) / (1024 - 375)));
+        z-index: 50;
     }
     
     .Audit{
@@ -1540,7 +1541,7 @@ img{
         padding-top: 0px;
         padding-left: 0px;
         padding-right: 43px;
-        z-index: 100;
+        z-index: 50;
     }
 
 
