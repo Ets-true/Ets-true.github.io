@@ -1601,6 +1601,7 @@ img{
     
     .thank__info{
         font-size: 17px;
+        line-height: 18px;
         top: 50%;
         left: 10px;
         transform: translate(0, -50%)
