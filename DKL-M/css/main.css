@@ -1570,6 +1570,7 @@ img{
         padding-top: 10px;
         padding-left: 0px;
         padding-right: 27px;
+        z-index: 50;
     }
     
     
