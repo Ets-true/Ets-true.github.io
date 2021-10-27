@@ -1318,6 +1318,17 @@ img{
         --paddingLeft: calc(37px + (200 - 37) * ((100vw - 375px) / (1024 - 375)));
     }
 
+    .header__mask{
+        position: fixed !important;
+        top: 0; left: 0;
+        width: 100%;
+        height: calc(55px + (70 - 55) * ((70vw - 375px) / (1024 - 375)));
+        background-color: #12002A;
+        opacity: 0.35;
+        z-index: 70;
+
+    }
+
     header{
         width: 100%;
         height: calc(55px + (70 - 55) * ((70vw - 375px) / (1024 - 375)));
@@ -1586,8 +1597,8 @@ img{
     
     .thank {
         margin: auto;
-        width: 272px;
-        height: 56px;
+        width: 292px;
+        height:67px;
         border-radius: 7px;
         border: 2px solid rgb(0, 192, 29, 0.6);
         margin-bottom: 32px;
@@ -1603,7 +1614,7 @@ img{
         font-size: 17px;
         line-height: 18px;
         top: 50%;
-        left: 10px;
+        left: 20px;
         transform: translate(0, -50%)
     }
     
@@ -1613,7 +1624,7 @@ img{
         top: 50%;
         transform: translateY(-50%);
         /* Поднять вверх  */
-        left: 190px;
+        left: 210px;
         display: flex;
     }
     .arrow__line {
@@ -1676,7 +1687,7 @@ img{
         width: 280px;
         height: 44px;
         margin: auto;
-        margin-top: 7px;
+        margin-top: -5px;
         background-image: url("../media/QualisGuard.jpg");
         background-size: 105% 600%;
         background-position: 5% 13%;
@@ -1704,9 +1715,9 @@ img{
     .certification__vertical .thank__info{
         
         top: 40px;
-        left: 6px;
+        left: 26px;
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
     
     .certification__vertical .thank__arrow{
@@ -1717,7 +1728,7 @@ img{
     .certification__vertical .certification__image{
         width: 280px;
         height: 44px;
-        margin-top: 94px;
+        margin-top: 82px;
         background-image: url("../media/Standard.jpeg");
         background-size: 110% 1200%;
         background-position: 5% 0%;
