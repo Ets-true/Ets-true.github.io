@@ -84,41 +84,37 @@ $(function () {
 ////////////////////////////////////////////////////
        
 //Слайдер всего сайта///////////////////////////////
+$(document).ready(function() {
+  if (document.documentElement.clientWidth >=1024) { 
+    new fullpage('#fullpage', {
+      anchors: ['company', 'audit', 'computers', 'skud', 'trust', 'contacts'],
+      verticalCentered: false,
+      lazyLoading: false,
+      scrollingSpeed: 1200,
+      animateAnchor: false,
+      afterLoad: function(origin, destination, direction){
+        console.log(destination);
+        console.log(destination['index']);
+        console.log(direction);
+        $(".glow").filter(".glow__active").removeClass('glow__active');
+        $('.glow').eq(destination['index']).addClass('glow__active');
+      },
 
-new fullpage('#fullpage', {
-    anchors: ['company', 'audit', 'computers', 'skud', 'trust', 'contacts'],
-    verticalCentered: false,
-    // scrollBar: true,
-    // fitToSection: false,
-    // fitToSectionDelay: 0,
-    lazyLoading: false,
-    // css3: false,
 
-    scrollingSpeed: 1200,
-    animateAnchor: false,
-    // fitToSectionDelay: 5000,
-    // easingcss3: 'none',
-    // parallaxOptions: {
-    //   type: 'none',
-    //   percentage: 0,
-    //   property: 'translate'
-    // },
-    // cardsOptions: {
-    //   perspective: 0,
-    //   fadeContent: false,
-    //   fadeBackground: false,
-    // },
- 
-    
+      // responsiveWidth:1024,
+      // anchors: ['company', 'audit'],
+    });
+  }
   
-    afterLoad: function(origin, destination, direction){
-      console.log(destination);
-      console.log(destination['index']);
-      console.log(direction);
-      $(".glow").filter(".glow__active").removeClass('glow__active');
-      $('.glow').eq(destination['index']).addClass('glow__active');
-    },
-  });
+
+
+})
+
+
+  
+
+
+
 
 //////////////////////////////////////////////////
 

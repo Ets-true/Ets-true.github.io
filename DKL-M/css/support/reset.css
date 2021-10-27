@@ -143,7 +143,22 @@ img {
   display: none;
 }
 
-@media(max-width: 1919px){
+
+@media(max-width: 1024px) {
+  h1 {
+    font-size: calc(25px + (33 - 25) * ((100vw - 375px) / (1024 - 375)));
+    padding-left: var(--paddingLeft);
+  }
+  p{
+    font-size: calc(15px + (20 - 15) * ((100vw - 375px) / (1024 - 375)));
+    margin-top: calc(24px + (31 - 24) * ((100vw - 375px) / (1024 - 375)));
+    max-width: calc(290px + (500 - 290) * ((100vw - 375px) / (1024 - 375)));
+    padding-left: var(--paddingLeft);
+    line-height: 18px;
+  }
+}
+
+@media(min-width: 1024px) and (max-width: 1919px) {
   h1 {
     font-size: calc(26px + (50 - 26) * ((100vw - 1024px) / (1920 - 1024)));
   }

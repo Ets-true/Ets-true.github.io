@@ -1308,7 +1308,498 @@ img{
     }   
 } */
 
-@media(max-width: 1919px){
+@media(max-width: 1024px) {
+
+    body{
+        overflow: scroll !important;
+    }
+
+    :root{
+        --paddingLeft: calc(37px + (200 - 37) * ((100vw - 375px) / (1024 - 375)));
+    }
+
+    header{
+        width: 100%;
+        height: calc(55px + (70 - 55) * ((70vw - 375px) / (1024 - 375)));
+        
+        padding-left: calc(15px + (20 - 15) * ((70vw - 375px) / (1024 - 375)));
+        padding-right: 0;
+        position: fixed !important;
+        top: 0; left: 0;
+    }
+    
+    .header__logo {
+        width: auto;
+        height: auto;
+        display: flex;
+        position: absolute;
+        top: 50%;
+        transform: translate(0,-50%);
+        opacity: 0;
+        /* display: none; */
+    }
+    
+    .header__img {
+        margin-top: 5px;
+        width:  calc(21px + (27 - 21) * ((70vw - 375px) / (1024 - 375)));
+        height:  calc(29px + (38 - 29) * ((70vw - 375px) / (1024 - 375)));
+    }
+    
+    .header__name {
+        margin-left: 9px;
+        font-size: calc(13px + (17 - 13) * ((70vw - 375px) / (1024 - 375)));
+        line-height: 18px;
+        width: 400px;
+    }
+    
+    .header__links {
+        display: none;
+    }
+    .link{
+        display: inline-block;
+    }
+    .header__link{
+        display: none;
+    }  
+    .header__blur {
+        display: none;
+    }
+    .Security__blur {
+        display: none;
+    }
+    .Sites__blur {
+        display: none;
+    }
+    aside{
+        display: none;
+    }
+    .sidebar__glassmorthizm{
+        display: none;
+    }
+
+    #particles-js{
+        display: none;
+    }
+
+    .section{
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: auto;
+        transition: all 1s;
+    }
+
+    
+    .Company{
+        padding-top: calc(156px + (202 - 156) * ((70vw - 375px) / (1024 - 375)));
+        padding-left: 0;
+        position: relative;
+        height: 100vh;
+        margin-top: calc(55px + (70 - 55) * ((70vw - 375px) / (1024 - 375)));
+    }
+    
+    .Audit{
+        padding-top: 0;
+        padding-left: 0;
+        /* display: none; */
+    }
+    
+    .Audit__grid{
+        margin: auto;
+        margin-top: 85px;
+        width: calc(321px + (417 - 321) * ((70vw - 375px) / (1024 - 375)));
+        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr ;
+        grid-row-gap: calc(65px + (84 - 65) * ((70vw - 375px) / (1024 - 375)));
+        grid-column-gap: 0;
+        position: relative;
+       
+    }
+    
+    .grid__example{
+        width: calc(321px + (417 - 321) * ((70vw - 375px) / (1024 - 375)));
+        height: calc(92px + (120 - 92) * ((70vw - 375px) / (1024 - 375)));
+    }
+    
+    
+    
+    .grid__name{
+        width: 100%;
+        height: 100%;
+        font-size: calc(13px + (17 - 13) * ((70vw - 375px) / (1024 - 375)));
+        padding-top: calc(37px + (48 - 37) * ((70vw - 375px) / (1024 - 375)));
+    }
+    
+    
+    .Computers{
+        padding-top: 134px;
+    }
+    
+    .Computers__row {
+        width: 100%;
+        margin-top: 56px;
+        margin-left: 0;
+        margin-bottom: 76px;
+        padding-left: 36px;
+        padding-top: 20px;
+        display: block;
+    }
+    
+    .Computers__row::before {
+        content: '';
+        position: absolute;
+        top: 0px; left: 72px;
+        width: 1px;
+        height: 222px;    
+    }
+    
+    .Computers__step {
+        margin-right: 0;
+        display: flex;
+        margin-bottom: 53px;
+    }
+    
+    .step__point {
+        font-size: 19px;
+        margin-right: 30px;
+    }
+    
+    .step__name {
+        font-size: 17px;
+        margin-left: 0;
+    }
+    
+    .marginRight1{
+        margin-left: 0;
+        margin-right: 0;
+        
+    }
+
+    .Skud{
+       padding-top: 50px;
+       height: 1100px;
+    }
+    
+    .dots{
+        position: absolute;
+        top: 399px;
+        left: 184px;
+        display: block;
+        z-index: 0;
+        /* display: none; */
+    }
+    
+    .dots2{
+       display: none;
+    }
+    
+    .dot{
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+       
+        margin-right: 0px;
+        margin-bottom: 22px;
+    }
+    
+    .camera__image {
+        /* z-index: ; */
+        position: absolute;
+        top: 125px;
+        left: 69px;
+        width: 286px;
+        height: 310px;
+
+        background-size: 180% 100%;
+        background-position: 70% 50%;
+    }
+    
+    .camera__mask{
+        width: 242px;
+        height: 74px;
+        position: absolute;
+        border-top-right-radius: 7px;
+        bottom: 0;
+        left: 0;
+    }
+
+    .camera__image:hover{
+        background-size: 180% 100%;
+        background-position: 70% 50%;
+        transition: all 0.5s;
+    }
+    .camera__info {
+        top: 359px;
+        left: 20px;
+        width: 291px;
+        height: 139px;
+    
+
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 43px;
+        z-index: 100;
+    }
+
+
+    .skud__image {
+        transition: all 0.5s;
+        top: 609px;
+        left: 20px;
+        width: 286px;
+        height: 310px;
+       
+        background-size: 180% 100%;
+        background-position: 50% 50%;
+    }
+    .skud__image:hover {
+        background-size: 180% 100%;
+        background-position: 50% 50%;
+        transition: all 0.5s;
+    }
+    .skud__info {
+        top: 775px;
+        left: 58px;
+        width: 287px;
+        height: 179px;
+    
+    
+        padding-top: 10px;
+        padding-left: 0px;
+        padding-right: 27px;
+    }
+    
+    
+    .Trust{
+        /* display: none; */
+    }
+    .Trust__wrap{
+        margin-top:60px;
+        margin-left: 0;
+        display: block;
+    
+    }
+    
+    .thank {
+        margin: auto;
+        width: 272px;
+        height: 56px;
+        border-radius: 7px;
+        border: 2px solid rgb(0, 192, 29, 0.6);
+        margin-bottom: 32px;
+        position: relative;  
+    }
+    
+    .thank:hover{
+        transition: all 0.5s;
+        transform: scale(1.03);
+    }
+    
+    .thank__info{
+        font-size: 17px;
+        top: 50%;
+        left: 10px;
+        transform: translate(0, -50%)
+    }
+    
+    
+    .thank__arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        /* Поднять вверх  */
+        left: 190px;
+        display: flex;
+    }
+    .arrow__line {
+        transition: all 0.5s;
+        background-color: white;
+        width: 50px;
+        height: 2px;
+        margin-top: 3px;
+    }
+    .arrow__triangle {
+        width: 0;
+        height: 0;
+        border-top: 4px solid transparent;
+        border-left: 9px solid white;
+        border-bottom:4px solid transparent;
+        border-radius: 1px;
+    }
+    
+    .thank:hover .arrow__line {
+        transition: all 0.5s;
+        width: 58px;
+    }
+    
+    
+    .certifications__gorizontal {
+        margin-left: 0px;
+        /* display: none; */
+    }
+    
+    
+    .certification__gorizontal {
+        margin: auto;
+        margin-bottom: 32px;
+        width: 326px;
+        height: 152px;
+    }
+    
+    .certification__gorizontal:hover .arrow__line{
+        transition: all 0.5s;
+        width: 65px;
+    }
+    .certification__wrap{
+        width: auto;
+        height: 87px;
+        position: relative;
+    }
+    
+    .certification__wrap .thank__info{
+        left: 26px;
+    }
+    .certification__wrap .thank__arrow{
+        left: 240px;
+    }
+    .certification__gorizontal:hover {
+        transition: all 0.5s;
+        transform: scale(1.03);
+    }
+    
+    .certification__image{
+        width: 280px;
+        height: 44px;
+        margin: auto;
+        margin-top: 7px;
+        background-image: url("../media/QualisGuard.jpg");
+        background-size: 105% 600%;
+        background-position: 5% 13%;
+    }
+    .Huawei{
+        background-image: url("../media/huawei.jpg");
+        background-size: cover;
+        background-position: 5% 13%;
+    }
+    .certification__vertical {
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: auto;
+        width: 326px;
+        height: 152px;
+        border-radius: 10px;
+        
+    }
+    
+    .certification__vertical .certification__wrap{
+        width: 243px;
+        height: auto;
+    }
+    
+    .certification__vertical .thank__info{
+        
+        top: 40px;
+        left: 6px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .certification__vertical .thank__arrow{
+        top: 40px;
+        left: 240px;
+    }
+    
+    .certification__vertical .certification__image{
+        width: 280px;
+        height: 44px;
+        margin-top: 94px;
+        background-image: url("../media/Standard.jpeg");
+        background-size: 110% 1200%;
+        background-position: 5% 0%;
+    }
+    
+    
+    
+    .certification__vertical:hover {
+        transition: all 0.5s;
+        transform: scale(1.03);
+    }
+    
+    .certification__vertical:hover .arrow__line{
+        transition: all 0.5s;
+        width: 65px;
+    }
+    
+    
+    
+    
+    .Contacts{
+        margin-top: 151px;
+        height: 521px;
+    }
+    
+    .contacts__info{
+        top: 90px;
+        left: 12px;
+        width: 351px;
+        height: 221px;
+        padding-top: 24px;
+        padding-left: 32px;
+    }   
+    
+    .contacts__title {
+        font-size: 16px;
+    }
+    .contacts__email {
+        margin-top: 49px;
+        font-size: 15px;
+    }
+    .contacts__email::before {
+        left: 147px;
+        width: 147px;
+    }
+    
+    .contacts__phone {
+        margin-top: 35px;
+        font-size: 14px;
+    }
+    
+    .contacts__phone::before {
+        left: 170px;
+        width: 122px;
+    }
+    
+    
+    .copyright{
+        bottom: 42px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 12px;
+
+       
+    }
+
+    
+
+
+
+    .scroll{
+        display: none;
+    }
+    .active_scroll{
+        display: none;
+    }
+    .scroll__line{
+        display: none;
+    }
+    .active_scrollLine{
+        display: none;
+    }
+}
+
+@media(min-width: 1024px) and (max-width: 1919px) {
     :root{
         --paddingLeft: calc(220px + (416 - 220) * ((100vw - 1024px) / (1920 - 1024)));
     }
