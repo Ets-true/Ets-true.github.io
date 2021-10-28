@@ -232,7 +232,7 @@ $(document).ready(function() {
 // }
 
 
-// $(window).on('resize',function(){location.reload();});
+$(window).on('resize',function(){location.reload();});
 
 $(window).bind('hashchange', function() {
   var hash = window.location.hash;
