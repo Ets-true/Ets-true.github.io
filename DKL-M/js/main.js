@@ -253,11 +253,12 @@ if (document.documentElement.clientWidth <1024) {
 
   for (let anchor of anchors){
     anchor.addEventListener("click", function(event){
-       
-        const blockID = anchor.getAttribute('href');
-        $('html, body').animate({
-            scrollTop: $(''+blockID).offset().top
-        }, 900);
+        event.preventDefault();
+        const blockID = anchor.getAttribute('href')
+        document.querySelector('' + blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: "start"
+        })
     })
     
 }
@@ -273,5 +274,9 @@ if (document.documentElement.clientWidth <1024) {
   });
 
 }
+
+
+
+    
 
 
