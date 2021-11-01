@@ -135,7 +135,7 @@ header{
 }
 
 .link{
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .header__link{
