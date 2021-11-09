@@ -1,0 +1,12 @@
+.hide{
+    display:none;
+    visibility: none;
+  }
+
+.slideUp {
+    animation-name: slideUp;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    visibility: visible !important;
+    display:block !important;
+  }

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="fullpage.css"/>
+</head>
+
+
+
+<body>
+
+    <div class="loading">
+        <div class="loading__info">
+            Комплексное обеспечение <br>
+            информационной безопасности
+            <div class="loading__info_timer"></div>
+        </div>
+    </div>
+
+    <header>
+
+    </header>
+
+    <aside>
+            <ul>
+                <li class="nav__tool">
+                    <a class="nav__item" href="#slide1"></a>
+                    <div class="tooltip"> Видеонаблюдение</div>
+                </li>
+                <li class="nav__tool">
+                    <a class="nav__item" href="#slide2"></a>
+                    <div class="tooltip"> Видеонаблюдение</div>
+                </li>
+                <li class="nav__tool">
+                    <a class="nav__item" href="#slide3"></a>
+                    <div class="tooltip"> Видеонаблюдение</div>
+                </li>
+            </ul>
+    </aside>
+
+    <div class="slider" id="fullpage">
+        <div class="section _1" id="net" data-anchor="slide1">
+            <h1> Тест заголовка</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quod 
+                non ea nulla deserunt, enim reiciendis dolorem natus 
+                vitae soluta voluptatibus eaque magnam eius fuga dolores amet dicta blanditiis eveniet?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quod 
+                non ea nulla deserunt, enim reiciendis dolorem natus 
+                vitae soluta voluptatibus eaque magnam eius fuga dolores amet </p>
+        </div>
+        <div class="section _2" data-anchor="slide2">
+            <div class="wrap" id="particles-js">
+                <!-- <div class="info">
+                    <h1> Тест заголовка</h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quod 
+                    non ea nulla deserunt, enim reiciendis dolorem natus 
+                    vitae soluta voluptatibus eaque magnam eius fuga dolores amet dicta blanditiis eveniet?
+                    </p>
+                </div>
+                <div class="image">
+
+                </div> -->
+            </div>
+        </div>
+        <div class="section _3" id="net_2" data-anchor="slide3"><h1> Тест заголовка</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quod 
+                non ea nulla deserunt, enim reiciendis dolorem natus 
+                vitae soluta voluptatibus eaque magnam eius fuga dolores amet dicta blanditiis eveniet?</p></div>
+    </div>
+    <!-- <nav>
+        <a href="1.html">Чебурашка</a>
+        <a href="2.html">Гена</a>
+        <a href="3.html">Шапокляк</a>
+         <a href="4.html">Лариска</a>
+    </nav> -->
+</body>
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+
+    .loading{
+        opacity: 1;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 102;
+        background-color: #12002a;
+    }
+    .loading__info{
+        text-align: left;
+        font-size: 70px;
+        color: white;
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 50%;
+        top: 50%;
+        transform:translate(-50%, -50%);
+        /* transform:translateX(-50%); */
+        opacity: 1;
+    }
+
+    .opacity1{
+        opacity: 1;
+        transition: all 1.5s;
+    }
+
+    .opacity0{
+        opacity: 0;
+        transition: all 1.5s;
+    }
+    header{
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 110px;
+
+        /* backdrop-filter: saturate(1.8) blur(20px); */
+        /* background-color: rgba(29, 29, 31, 0.72); */
+
+        background: rgba( 255, 255, 255, 0.1 );
+        box-shadow: 0px 0px 24px #00000029;
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );  
+        border: 0;
+        
+    }
+
+    aside{
+        z-index: 100;
+        position: fixed;
+        top: 200px;
+        left: 50px;
+        width: 70px;
+        height: 60vh;
+        background: rgba( 255, 255, 255, 0.1 );
+        box-shadow: 0px 0px 24px #00000029;
+        backdrop-filter: blur( 4px );
+
+        /* backdrop-filter: saturate(1.8) blur(20px);
+        background-color: rgba(29, 29, 31, 0.72); */
+
+        -webkit-backdrop-filter: blur( 4px );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );  
+        border: 0;
+        border-radius: 10px;
+        
+    }
+
+    .slider{
+        width: 100%;
+        height: auto;
+    }
+
+    .section{
+        width: 100vw;
+        height: 900px;
+        /* background-color: black; */
+        background-color: rgb(5, 0, 10);
+        background-color: rgb(11, 23, 41);
+        background-color: #12002a;
+        /* background-color:  rgb(22, 22, 22); */
+        padding-top: 0px;
+    }
+
+
+    .wrap{
+        margin: 0;
+        /* display: flex;
+        padding-left: 30%; */
+    }
+
+    .info{
+        /* background-color: green; */
+        padding-top: 100px;
+        /* display: none; */
+    }
+
+    .image{
+        width: 350px;
+        height: 500px;
+        margin-left: 100px;
+        background-image: url(slider__develop.png);
+        background-size: cover;
+        background-position: 30% 40%;
+        border-radius: 15px;
+        border: 1px;
+        border-style: solid;
+        border-color: rgb(128, 128, 128, 0.4);
+        box-shadow: 0px 0px 24px #00000029;
+    }
+
+    ._3{
+        /* background-color: black; */
+        /* background-color: rgb(17, 3, 17); */
+        /* background-color: rgb(17, 3, 17); */
+    }
+
+    h1{
+        font-size: 45px;
+        text-align: left;
+        margin-top: 300px;
+        margin-left: 410px;
+        color: white;
+       
+    }
+    p{
+        font-size: 20px;
+        width: 1088px;
+        height: 444px;
+        color: white;
+        margin: auto;
+       
+    }
+    ul{
+        /* background-color: red; */
+        padding: 0;
+    }
+    li{
+        width: 100%;
+        height: auto;
+        text-decoration: none;
+        /* background-color: green; */
+        list-style-type: none;
+    }
+
+    .nav__tool{
+        position: relative;
+    }
+
+    .tooltip{
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 2s;
+        position: absolute;
+        top:50%;
+        transform: translate(0, -50%);
+        right: -125px;
+        width: auto;
+        height: auto;
+        padding: 5px;
+        background: rgba( 255, 255, 255, 0.1 );
+        box-shadow: 0px 0px 24px #00000029;
+        backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        font-size: 14px;
+        color: white;
+    }
+
+    
+
+    .nav__tool:hover > .tooltip{
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.8s;
+    }
+
+    /* .nav__tool:active > .tooltip{
+        visibility: none;
+    } */
+
+    .nav__item{
+        margin-top: 20px;
+        display: block;
+        width: 100%;
+        height: 60px;
+        background-color: white;
+        opacity: 0.1;
+        text-decoration: none;
+
+    }
+
+    .nav__item.active{
+        /* background-color: blue; */
+        opacity: 0.3;
+    }
+
+    #particles-js{
+        width: 100%;
+        height: 100%;
+    }
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    var loading = document.querySelector('.loading');
+    var loadingInfo = document.querySelector('.loading__info');
+
+    // window.addEventListener('load', function() {
+        // setTimeout(function(){
+        //     loadingInfo.classList.add('opacity1')
+        // }, 10);
+
+        const min = 0, max = 100, time = 1000;
+        (function step(val) { 
+            setTimeout(function() {
+                document.querySelector('.loading__info_timer').textContent = val;
+                if (val < max) {
+                    step(val + 1);
+                }
+            }, time / (max - min));
+        })(min);
+
+        // for(var time = 0; time<=100;){
+        //     document.querySelector(".loading__info").innerHTML = time;
+        //     setTimeout(function(){
+        //         time++;
+        //     }, 100)
+        // }
+
+        setTimeout(function(){
+            loadingInfo.classList.add('opacity0')
+        }, 2000);
+
+        setTimeout(function(){
+            loading.classList.add('opacity0')
+        }, 3500);
+
+        setTimeout(function(){
+            loading.style.display = 'none'
+        }, 7500)
+        // loading.style.display = 'none';
+    // })
+</script>
+
+
+<!-- <script src="slick/slick.min.js"></script> -->
+<script src="fullpage.js"></script>
+<script src="slider.js"></script>
+
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".image"), {
+		max: 15,
+		speed: 400,
+        perspective:            1000,
+        reverse:                true,
+        // glare: true,
+        // "max-glare": 0.1,
+	});
+	
+	//It also supports NodeList
+	VanillaTilt.init(document.querySelectorAll(".your-element"));
+</script>
+
+<script src="three.min.js"></script>
+<script src="vanta.net.min.js"></script>
+<script>
+VANTA.NET({
+  el: "#net",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x089120,
+  opacity: 0.4,
+  backgroundColor: 0x12002a,
+})
+</script>
+<script>
+    VANTA.NET({
+      el: "#net_2",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x089120,
+      opacity: 0.4,
+      backgroundColor: 0x12002a,
+    })
+    </script>
+
+<script src="particles.min.js"></script>
+<script src="app.js"></script>
+
+
+</html>

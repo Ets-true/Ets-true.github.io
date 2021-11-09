@@ -1,0 +1,33 @@
+.contacts{
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+}
+.attantion_mobile{
+    display: none;
+}
+
+@media(max-width: 768px){
+    .contacts{
+        
+    }
+    .attantion_mobile{
+        display: none;
+        position: absolute;
+        top:20%;
+        left:10%;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 40px;
+        color: #DCDCDC;
+        
+    }
+}
+
+
+
+
+
+
+
+
