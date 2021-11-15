@@ -69,8 +69,15 @@ header{
     font-family: "SourceSerif4-Regular";
     font-size: 40px;
     text-align: center;
-    padding-top: 150px;
+    margin-top: 150px;
+    padding-top: 0;
+    /* opacity: 1; */
+    /* opacity: 0; */
     
+}
+
+._2{
+    /* display: none; */
 }
 
 .chapter__title{
@@ -133,12 +140,9 @@ span{
 
 
 
-.lottie_scroll::-webkit-scrollbar {width:0px;}
-
 .lottie_wrap{
-    /* transition: all 0.5s; */
     height: 14500px;
-    /* background-color: green; */
+    /* height: 13752px; */
     position: relative;
 }
 
@@ -148,20 +152,23 @@ span{
     top: 0;
     top: 2%;
     margin: auto;
-    margin-bottom: -1000px;
+    margin-bottom: -2050px;
     /* margin-top: -2000px; */
     /* width: 97%; */
+    /* width: 95%;
+    height: auto; */
     width: 1862px;
     height: 947px;
     /* width: 40%; */
     
     image-rendering: -webkit-optimize-contrast;
     /* background-color: green; */
+    opacity: 1;
 }
 
 .next__wrap{
     height: 4000px;
-    background-color: #fff;
+    background-color: green;
 }
 
 
@@ -176,6 +183,10 @@ span{
             perspective: 1000;
     position: relative;
     /* display: none; */
+
+    /* background-color: green;*/
+    /* opacity: 0.4;  */
+    /* opacity: 0; */
 }
 
 #slideContainer {
@@ -213,7 +224,9 @@ img{
     width: 20%;
     float: left;
     position: relative;
-    /* background-color: red; */
+    
+    /* background-color: red;
+    border: 2px solid green; */
 }
 
 .slide__title {
@@ -221,32 +234,44 @@ img{
     top: 120px;
     left: 50%;
     transform: translateX(-50%);
-
     height: 50px;
     width: auto;
+    /* width: 800px; */
+    line-height: 0;
     /* background-color: red; */
+    overflow: hidden;
+}
+
+.title__IT{
+    visibility: hidden;
     opacity: 0;
 }
 
-#IT__title{
-    transition: all 0.5s;
-    opacity: 1;
-    visibility: visible;
-}
-#Art__title{
+.title__Art{
     transition: all 0.5s;
     visibility: hidden;
     opacity: 0;
 }
-#Industry__title{
+.title__Industry{
+    transition: all 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.title__Science{
+    transition: all 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.title__Media{
     transition: all 0.5s;
     visibility: hidden;
     opacity: 0;
 }
 
 .title__video{
-    width: 100%;
-    height: 100%;
+    height: 50px;
 }
 
 .slider__video{
@@ -257,9 +282,11 @@ img{
     border-radius: 15px;
     overflow: hidden;
     position: relative;
+    background-color: rgb(233, 233, 233);
 }
 
-#video_background{
+
+.video_background{
     position: absolute;
     top: -112px;
     left: -44px;
@@ -268,15 +295,10 @@ img{
     height: 643px;
 }
 
-#video__IT{
-    /* padding-left: -15px; */
-}
 
-.video__up{
-    /* opacity: 0.4; */
-    /* margin-top: ; */
+
+.video_up{
     opacity: 0;
-    /* position: sticky; */
 }
 
 #video{
@@ -289,7 +311,31 @@ img{
 
 
 
+.lottie_wrap_2{
+    /* transition: all 0.5s; */
+    height: 30000px;
+    /* background-color: green; */
+    position: relative;
+    /* display: none; */
+}
 
+#lottie-2{
+    position: sticky;
+    top: 0;
+    top: 2%;
+    margin: auto;
+    /* margin-bottom: -1000px; */
+    margin-bottom: 700px;
+    /* width: 97%; */
+    /* width: 90%;
+    height: auto; */
+    width: 1862px;
+    height: 947px;
+    /* width: 40%; */
+    
+    image-rendering: -webkit-optimize-contrast;
+    /* background-color: green; */
+}
 
 
 
@@ -301,6 +347,7 @@ img{
     position: fixed;
     top: 785px;
     left: 1780px;
+    
 }
 .mouse__line {
     width: 1px;
@@ -335,6 +382,22 @@ img{
     height: 8px;
     background-color: #9E9E9E;
    
+}
+
+.mouse__text{
+    transition: all 0.5s;
+    font-family: "Montserrat-Light";
+    font-size: 14px;
+    
+    margin-top: -37px;
+    width: 130px;
+    transform: translateX(-43%);
+    opacity: 0;
+}
+
+.mouse:hover > .mouse__text{
+    transition: all 0.5s;
+    opacity: 1;
 }
 
 @keyframes mouse_animation {
