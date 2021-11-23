@@ -34,15 +34,73 @@
 </head>
 <body>
     <header>
-        <div class="menu">
+       <div class="menu" id="Menu">
+        <div class="menu__burger">
+       </div>
+       <div class="menu__page">
+            <div class="menu__page_wrap">
+
+                <div class="burger__background_1" >tment</div>
+                <div class="burger__background_2" >depar</div>
+
+                <div class="page__back" id="PageBack">
+                    <div class="back__arrow"><img src="arrow.svg" alt=""></div>
+                    <div class="back__info">Вернуться назад</div>
+                </div>
+
+                <div class="form__burger" >
+                    <form id="MailForm_burger" autocomplete="off">
+                        <div class="form__line">
+                            <label>Ваше имя</label>
+                            <input type="text" id="name_burger" name="user_name">
+                        </div>
+                    
+                        <div class="form__line">
+                            <label>Номер телефона</label>
+                            <input type="text" id="phone_burger" name="user_phone">
+                        </div>
+                    
+                        <div class="form__line">
+                            <label>Название компании</label>
+                            <input type="text" id="company_burger" name="user_company">
+                        </div>
+                    
+                        <div class="buttonSuccess">
+                            <button type="button" name="button" id="sendMail_burger">Связаться</button>
+                            <div class="success" id="Success_burger">Запрос отправлен</div>
+                        </div>
+                        
+                    </form>
+                </div>
+
+                <div class="form__burger_info">
+                    <div class="info__mail_burger">
+                        <div class="mail__icon"><img src="mail.svg" alt=""></div>
+                        <div class="mail__name"> connect@departmentview.ru</div>
+                    </div>
+                    <div class="info__phone_burger">
+                        <div class="phone__icon"><img src="phone.svg" alt=""></div>
+                        <div class="phone__number">7 (903) 621 00 00</div>
+                    </div>
+                </div>
+
+                <div class="burger__Copyright">
+                    <div class="Copyright">Copyright 2021</div>
+                    <div class="Department"><a href="/">department</a> x <a href="https://infodesigner.ru/" target="_blank">infodesigner</a></div>
+                </div>
+            </div>
+       </div>
+        
         </div>
-        <a href="index.html">
+        <a href="index.html" id="Logo">
         <div class="logo">
             <div class="logo_top">department</div>
             <div class="logo_bottom">разработка сайтов</div>
         </div>
         </a>
     </header>
+
+
 
     <div class="main">
 
@@ -78,31 +136,31 @@
 
             <div class="slide__title title__IT">
                 <video class="title__video" id="IT__titleVideo"  width="100%" height="50%" no-controls autoplay loop muted >
-                    <source src="IT_title.mp4" type='video/mp4' />
+                    <source src="IT_title2.mp4" type='video/mp4' />
                 </video>
             </div>
 
             <div class="slide__title title__Art">
                 <video class="title__video" id="Art__titleVideo"  width="100%" height="50%" no-controls autoplay loop muted >
-                    <source src="Art_title.mp4" type='video/mp4' />
+                    <source src="Art_title2.mp4" type='video/mp4' />
                 </video>
             </div>
 
             <div class="slide__title title__Industry">
                 <video class="title__video" id="Industry__titleVideo"  width="100%" height="50%" no-controls autoplay loop muted >
-                    <source src="Industry_title.mp4" type='video/mp4' />
+                    <source src="Industry_title2.mp4" type='video/mp4' />
                 </video>
             </div>
 
             <div class="slide__title title__Science">
                 <video class="title__video" id="Science__titleVideo"  width="100%" height="50%" no-controls autoplay loop muted >
-                    <source src="Science_title.mp4" type='video/mp4' />
+                    <source src="Science_title2.mp4" type='video/mp4' />
                 </video>
             </div>
 
             <div class="slide__title title__Media">
                 <video class="title__video" id="Media__titleVideo"  width="100%" height="50%" no-controls autoplay loop muted >
-                    <source src="Media_title.mp4" type='video/mp4' />
+                    <source src="Media_title2.mp4" type='video/mp4' />
                 </video>
             </div>
                 
@@ -159,7 +217,118 @@
             <div id="lottie-2" class="lottie_animation_2"></div>
         </div>
 
-        <div class="mouse">
+        <div class="section chapter">
+            <span class="chapter__title">То, что будет дальше</span>
+        </div>
+
+        <div class="accompany" id="AccompanyVideo_block">
+            <video id="AccompanyVideo" class="" width="100%" height="50%" no-controls muted >
+                <source src="accompany.mp4" type='video/mp4' />
+            </video>
+        </div>
+
+        <div class="clients">
+            <div class="clients__title">Разрабатывали для</div>
+
+            <div class="clients__client">
+                <a href="http://rm.infodesigner.ru/" target="_blank">
+                    <div class="client__image RM">
+                        <div class="client__blur"></div>
+                    </div>
+                </a>
+                <div class="client__link_block">
+                    <a href="http://rm.infodesigner.ru/" class="client__link" target="_blank">rm.infodesigner.ru</a>
+                </div>
+            </div>
+
+            <div class="clients__client">
+                <a href="https://oborona.ru/" target="_blank">
+                    <div class="client__image Oborona">
+                        <div class="client__blur"></div>
+                    </div>
+                </a>
+                <div class="client__link_block">
+                    <a href="https://oborona.ru/" class="client__link" target="_blank">oborona.ru</a>
+                </div>
+            </div>
+
+            <div class="clients__client">
+                <a href="https://kiryakov.su/" target="_blank">
+                    <div class="client__image Kiryakov">
+                        <div class="client__blur"></div>
+                    </div>
+                </a>
+                <div class="client__link_block">
+                    <a href="https://kiryakov.su/" class="client__link" target="_blank">kiryakov.su</a>
+                </div>
+            </div>
+
+            <div class="clients__client">
+                <a href="https://psk2.ru/"  target="_blank">
+                    <div class="client__image PSK">
+                        <div class="client__blur"></div>
+                    </div>
+                </a>
+               
+                <div class="client__link_block">
+                    <a href="https://psk2.ru/" class="client__link"  target="_blank">psk2.ru</a>
+                </div>
+            </div>
+
+            <div class="clients__client">
+                <a href="http://departmentview.ru/projects/Niktel_v1/home.html"   target="_blank">
+                    <div class="client__image Niktel">
+                        <div class="client__blur"></div>
+                    </div>
+                </a>
+                <div class="client__link_block">
+                    <a href="http://departmentview.ru/projects/Niktel_v1/home.html" class="client__link"  target="_blank">niktel.ru</a>
+                </div>
+            </div>
+
+
+        </div>
+    
+        
+    
+        <div class="form__wrapper">
+            <div class="form__background" >tmentdepar</div>
+            <div class="form" >
+                <form id="MailForm" autocomplete="off">
+                    <div class="form__line">
+                        <label>Ваше имя</label>
+                        <input class="nameUP" type="text" id="name" name="user_name">
+                    </div>
+                
+                    <div class="form__line">
+                        <label>Номер телефона</label>
+                        <input type="text" id="phone" name="user_phone">
+                    </div>
+                
+                    <div class="form__line">
+                        <label>Название компании</label>
+                        <input type="text" id="company" name="user_company">
+                    </div>
+                
+                    <div class="buttonSuccess">
+                        <button type="button" name="button" id="sendMail">Связаться</button>
+                        <div class="success" id="Success">Запрос отправлен</div>
+                    </div>
+                    
+                </form>
+            </div>
+
+            <div class="form__info">
+                <div class="info__phone">+7 (903) 621 00 00</div>
+                <div class="info__copyright">Copyright  2021</div>
+                <div class="info__mail">connect@departmentview.ru</div>
+            </div>
+        </div>
+        
+
+       
+
+        <div class="mouse" id="mouse">
             <div class="mouse__line"></div>
             <div class="mouse__body"></div>
             <div class="mouse__text">Крутите колесико</div>
@@ -169,12 +338,6 @@
 
 
     </div>
-
-    <div class="section chapter _2">
-        <span class="chapter__title">То, что будет дальше</span>
-    </div>
-
-    
 
     
     
@@ -200,6 +363,8 @@
     <script type="text/javascript" src="js/lottie.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript" src="js/lottieRealize.js"></script>
+
+    <script type="text/javascript" src="js/Mail.js"></script>
 
 
     <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.0/lottie.js'></script> -->
@@ -320,5 +485,20 @@
 
     
 </script>
+
+
+
+
+
 </body>
+
+
+
+
+
+
+
 </html>
+
+
+
