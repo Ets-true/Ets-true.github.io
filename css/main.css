@@ -1,3 +1,13 @@
+body{
+    image-rendering: -webkit-optimize-Quality;
+    -webkit-font-smoothing: none;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;  
+}
+
+
 header{
     /* transition: all 0.5s; */
     position: fixed;
@@ -44,6 +54,7 @@ header{
 
 
 .menu__page{
+    /* transition: all 5s; */
     cursor: default;
     position: fixed;
     top: 0; left: 0;
@@ -51,6 +62,7 @@ header{
     height: 100vh;
     z-index: 100;
     background-color: white;
+    opacity: 0;
     display: none;
     /* overflow: hidden; */
 }
@@ -116,6 +128,9 @@ header{
     font-family: "Montserrat-Light";
     font-size: 21px;
     transform: translateY(-10px);
+    -moz-user-select: text;
+    -khtml-user-select: text;
+    user-select: text;
 }
 
 .info__phone_burger {
@@ -140,6 +155,9 @@ header{
     font-family: "Montserrat-Light";
     font-size: 20px;
     transform: translateY(-3px);
+    -moz-user-select: text;
+    -khtml-user-select: text;
+    user-select: text;
 }
 
 .burger__Copyright {
@@ -323,24 +341,39 @@ span{
 #lottie-1{
     position: sticky;
     top: 0;
-    top: 2%;
+    top: 19px;
     margin: auto;
     margin-bottom: -2050px;
     
 
-    width:3600px;
-    height:1817px;
+    /* width:3600px;
+    height:1817px; */
     
     /* width: 95%;
     height: auto; */
-  
-    width: 1862px;
-    height: 947px;
+/*   
+    width: 1920px;
+    height: 900px; */
 
-    image-rendering: -webkit-optimize-contrast;
+     /* width: 1862px;
+    height: 947px; */
+
+    width: 1862px;
+    height: 939.793px;
+
+    /* width: 1862px;
+    height: 872.812636px; */
+
+    /* image-rendering: -webkit-optimize-contrast; */
 
     opacity: 1;
     /* shape-rendering: geometricPrecision; */
+}
+
+#lottie-1 svg{
+    image-rendering: -webkit-optimize-Quality;
+    -webkit-filter: blur(0.000001px);
+    
 }
 
 .next__wrap{
@@ -502,11 +535,9 @@ img{
 
 
 .lottie_wrap_2{
-    /* transition: all 0.5s; */
-    height: 30000px;
-    /* background-color: green; */
+    height: 16000px;
     position: relative;
-    /* display: none; */
+    margin-bottom: 300px;
 }
 
 #lottie-2{
@@ -514,37 +545,65 @@ img{
     top: 0;
     top: 2%;
     margin: auto;
-    /* margin-bottom: -1000px; */
-    margin-bottom: 700px;
-    /* width: 97%; */
-    /* width: 90%;
-    height: auto; */
     width: 1862px;
     height: 947px;
-    /* width: 40%; */
-    
-    /* image-rendering: -webkit-optimize-contrast; */
-    /* background-color: green; */
+    margin-bottom: 400px;
+}
+
+.accompany__wrap{
+    position: relative;
+    height: 2000px;
+}
+
+.accompany__wrap_sticky{
+    position: sticky;
+    top: 0;
+    top: 2%;
+}
+
+
+
+.Accompany__title1 {
+    font-family: "SourceSerif4-Regular";
+    font-size: 35px;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100px;
+    opacity: 0;
+    z-index: 50;
+}
+.Accompany__title2 {
+    font-family: "SourceSerif4-Regular";
+    font-size: 35px;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100px;
+    opacity: 0;
+    z-index: 50;
 }
 
 .accompany{
-    /* width: 95%;
-    height: auto; */
-   
-    height: 947px;
-    width: 1862px;
-    margin: auto;
+    width: 1800px;
+    height: 836px;
+    margin: auto; 
     overflow: hidden;
     position: relative;
-    /* background-color: blue; */
+  
 }
 
 
 .accompany video{
     position: absolute;
-    left: -2px;
+    top: 0;
+    left: -50px;
     width: 1920px;
-    height: 947px;
+    height: 900px;
 }
 
 .clients {
@@ -581,8 +640,8 @@ img{
     width: 100%;
     height: 100%;
     background-color: rgba( 255, 255, 255, 0.06 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
 }
 
 .client__image:hover .client__blur{
@@ -722,6 +781,8 @@ img{
     position: relative;
     /* background-color: green;
     height: 100vh; */
+
+    
 }
 
 .form__background{
@@ -732,9 +793,9 @@ img{
     font-size: 280px;
     opacity: 0.03;
     letter-spacing: 23px;
-    -moz-user-select: none;
+    /* -moz-user-select: none;
     -khtml-user-select: none;
-    user-select: none;   
+    user-select: none;    */
 }
 
 #MailForm{
@@ -829,6 +890,9 @@ button{
 .info__phone {
     font-size: 19px;
     margin-right: 542px;
+    -moz-user-select: text;
+    -khtml-user-select: text;
+    user-select: text;
 }
 .info__copyright {
     font-size: 20px;
@@ -837,6 +901,9 @@ button{
 }
 .info__mail {
     font-size: 20px;
+    -moz-user-select: text;
+    -khtml-user-select: text;
+    user-select: text;
 }
 
 
@@ -856,6 +923,7 @@ button{
     
     
 }
+
 .mouse__line {
     width: 1px;
     height: 95px;
@@ -934,7 +1002,125 @@ button{
 
 
 @media(min-width: 1024px) and (max-width: 1919px) {
-    /* calc(220px + (416 - 220) * ((100vw - 1024px) / (1920 - 1024))) */
+
+    .menu{
+        width: calc(13.25px + (25 - 13.25) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(9.01px + (17 - 9.01) * ((100vw - 1024px) / (1920 - 1024)));
+        margin-top: calc(18.02px + (34 - 18.02) * ((100vw - 1024px) / (1920 - 1024)));
+        margin-left: calc(18.55px + (35 - 18.55) * ((100vw - 1024px) / (1920 - 1024)));
+        margin-right: calc(21.2px + (40 - 21.2) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .menu__burger{
+        width: calc(13.25px + (25 - 13.25) * ((100vw - 1024px) / (1920 - 1024)));
+        height: 2px;
+        margin-top: calc(3.71px + (7 - 3.71) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+
+    .menu__burger::before {
+        top: -calc(3.71px + (7 - 3.71) * ((100vw - 1024px) / (1920 - 1024)));
+        width: calc(13.25px + (25 - 13.25) * ((100vw - 1024px) / (1920 - 1024)));
+        height: 2px;
+    }
+
+    .menu__burger::after {
+        top: calc(3.71px + (7 - 3.71) * ((100vw - 1024px) / (1920 - 1024)));
+        width: calc(13.25px + (25 - 13.25) * ((100vw - 1024px) / (1920 - 1024)));
+        height: 2px;
+    }
+
+    .page__back {
+        top: 35px;
+        left: calc(18.5px + (35 - 18.5) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+
+    .back__arrow {
+        width: calc(4.24px + (8 - 4.24) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(8.5px + (16 - 8.5) * ((100vw - 1024px) / (1920 - 1024)));
+        margin-right: calc(11px + (21 - 11) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    .back__info {
+        font-size: calc(11px + (21 - 11) * ((100vw - 1024px) / (1920 - 1024)));
+        transform: translateY(-calc(3.7px + (7 - 3.7) * ((100vw - 1024px) / (1920 - 1024))));
+    }
+    
+    .form__burger{
+        left: calc(154px + (290 - 154) * ((100vw - 1024px) / (1920 - 1024)));
+        top: calc(165px + (311 - 165) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    #MailForm_burger{
+        width: calc(310px + (585 - 310) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    
+    .form__burger_info {
+        top: calc(185.5px + (350 - 185.5) * ((100vw - 1024px) / (1920 - 1024)));
+        right: calc(179px + (338 - 179) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+
+    .info__mail {
+        margin-bottom: calc(11.6px + (22 - 11.6) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+
+    .mail__icon {
+        width: calc(13.2px + (25 - 13.2) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(9px + (17 - 9) * ((100vw - 1024px) / (1920 - 1024)));
+        margin-right: calc(9px + (17 - 9) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+
+    .mail__name {
+        font-size: calc(11.13px + (21 - 11.13) * ((100vw - 1024px) / (1920 - 1024)));
+        transform: translateY(-calc(5.3px + (10 - 5.3) * ((100vw - 1024px) / (1920 - 1024))));
+    }
+    
+    .info__phone_burger {
+        font-size: calc(10px + (19 - 10) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .info__mail_burger {
+        font-size: calc(10.5px + (20 - 10.5) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .phone__icon {
+        width: calc(11.6px + (22 - 11.6) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(11.6px + (22 - 11.6) * ((100vw - 1024px) / (1920 - 1024)));
+        margin-right: calc(9px + (17 - 9) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+
+    .phone__number {
+        font-size: calc(10.5px + (20 - 10.5) * ((100vw - 1024px) / (1920 - 1024)));
+        transform: translateY(-calc(2px + (3 - 2) * ((100vw - 1024px) / (1920 - 1024))));
+    }
+    
+    .burger__Copyright {
+        bottom: calc(18.5px + (35 - 18.5) * ((100vw - 1024px) / (1920 - 1024)));
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .Copyright {
+        font-size: calc(9px + (17 - 9) * ((100vw - 1024px) / (1920 - 1024)));
+        transform: translateY(0px);
+    }
+
+    .Department {
+        font-size: calc(10.5px + (20 - 10.5) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    .burger__background_1 {
+        top: calc(29px + (54 - 29) * ((100vw - 1024px) / (1920 - 1024)));
+        left: calc(1px + (2 - 1) * ((100vw - 1024px) / (1920 - 1024)));
+        font-size: calc(148px + (280 - 148) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+
+    .burger__background_2 {
+        top: calc(124px + (234 - 124) * ((100vw - 1024px) / (1920 - 1024)));
+        right: calc(10px + (19 - 10) * ((100vw - 1024px) / (1920 - 1024)));
+        font-size: calc(148px + (280 - 148) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+    
+    
     
     .logo {
         margin-top: calc(6px + (12 - 6) * ((100vw - 1024px) / (1920 - 1024)));
@@ -986,7 +1172,7 @@ button{
     }
     
     .lottie_wrap{
-        height: calc(5300px + (10000 - 5300) * ((100vw - 1024px) / (1920 - 1024)));
+        /* height: calc(5300px + (10000 - 5300) * ((100vw - 1024px) / (1920 - 1024))); */
     }
     
     #lottie-1{
@@ -994,8 +1180,10 @@ button{
         margin: auto;
         margin-bottom: -calc(1086px + (2050 - 1086) * ((100vw - 1024px) / (1920 - 1024)));
         width: calc(987px + (1862 - 987) * ((100vw - 1024px) / (1920 - 1024)));
-        height: calc(502px + (947 - 502) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(498px + (939.793 - 498) * ((100vw - 1024px) / (1920 - 1024)));
     }
+
+
     
     
     #slideContainer {
@@ -1053,22 +1241,24 @@ button{
     }
     
     #lottie-2{
-        top: 2%;
+        top: calc(0px + (15 - 0) * ((100vw - 1024px) / (1920 - 1024)));
         margin-bottom: calc(371px + (700 - 371) * ((100vw - 1024px) / (1920 - 1024)));
         width:calc(987px + (1862 - 987) * ((100vw - 1024px) / (1920 - 1024)));
         height: calc(502px + (947 - 502) * ((100vw - 1024px) / (1920 - 1024)));
     }
+
+   
     
     .accompany{
-        width:calc(987px + (1862 - 987) * ((100vw - 1024px) / (1920 - 1024)));
-        height: calc(502px + (947 - 502) * ((100vw - 1024px) / (1920 - 1024)));
+        width:calc(954px + (1800 - 954) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(443px + (836 - 443) * ((100vw - 1024px) / (1920 - 1024)));
     }
     
     
     .accompany video{
-        left: -calc(1px + (2 - 1) * ((100vw - 1024px) / (1920 - 1024)));
+        left: -calc(26.5px + (50 - 26.5) * ((100vw - 1024px) / (1920 - 1024)));
         width: calc(1024px + (1920 - 1024) * ((100vw - 1024px) / (1920 - 1024)));
-        height: calc(502px + (947 - 502) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(477px + (900 - 477) * ((100vw - 1024px) / (1920 - 1024)));
     }
     
     .clients {
@@ -1162,11 +1352,18 @@ button{
         font-size: calc(11px + (20 - 11) * ((100vw - 1024px) / (1920 - 1024)));
     }
 
+
+    
+    
+    
+   
+    
+
     .mouse {
         width: calc(11px + (21 - 11) * ((100vw - 1024px) / (1920 - 1024)));
         height: calc(50px + (95 - 50) * ((100vw - 1024px) / (1920 - 1024)));
         top: calc(416px + (785 - 416) * ((100vw - 1024px) / (1920 - 1024)));
-        right: 0;
+        transform: translateX(calc(434px + (820 - 434) * ((100vw - 1024px) / (1920 - 1024))));
     }
 
     .mouse__line {

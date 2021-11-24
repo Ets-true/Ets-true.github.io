@@ -73,23 +73,26 @@ select {
 }
 
 ::-webkit-scrollbar-thumb {
+  height: 54px;
   border-radius: 10px;
   background-color: rgb(151, 151, 151);
 }
 
 ::-webkit-scrollbar-track {
-  
   border-radius: 10px;
   border: 5px solid white;
   background-color: white;
 }
+
+
+
 
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 
 
 
 video{
-  outline: none;
+  /* outline: none; */
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -128,6 +131,9 @@ a{
 body{
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 img {
@@ -141,6 +147,11 @@ img {
 
 svg{
   image-rendering: -webkit-optimize-contrast;
+  text-rendering:auto;
+  shape-rendering: geometricPrecision;
+  /* -webkit-text-stroke: 1px */
+  /* stroke-linejoin: arcs; */
+
 }
 
 .content__container{

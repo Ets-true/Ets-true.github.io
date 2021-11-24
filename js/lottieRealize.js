@@ -52,23 +52,27 @@ var animData_2 = {
 };
 
 var anim_2 = bodymovin.loadAnimation(animData_2);
+
 var lottie_Wrap_2 = $(".lottie_wrap_2");
 var lottie_Wrap_Height_2 = $(".lottie_wrap_2").height();
 var lottie_Wrap_Position_2 = $(".lottie_wrap_2").offset().top;
 var animDuration_2 = lottie_Wrap_Height_2;
 var lottie_Animation_Height_2 = $('.lottie_animation_2').height();
 var lottie_Animation_Height_2_2 = lottie_Animation_Height_2/2;
+
+var SliderWidth = $('#slideContainer').width();
+
   
-var scrollToElem_2 = (lottie_Wrap_Position_2 + lottie_Animation_Height_2) - winHeight;
+var scrollToElem_2 = (lottie_Wrap_Position_2 + lottie_Animation_Height_2_2 + SliderWidth) - winHeight;
 
 
 function animatebodymovin_2(duration, animObject) {
-   console.log("OK")
    var winScrollTop = $(this).scrollTop();
-   var scrollPosition_2 = winScrollTop - 27460;
+   var scrollPosition_2 = winScrollTop - scrollToElem_2;
+   console.log(scrollPosition_2)
    if(scrollPosition_2 >= 0){
        var maxFrames = animObject.totalFrames;
-       var frame = (maxFrames / 100) * (scrollPosition_2 / (duration / 100));
+       var frame = (maxFrames / 100) * (scrollPosition_2 / (duration*1.05 / 100));
        animObject.goToAndStop(frame, true);
    }
 }

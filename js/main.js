@@ -124,16 +124,16 @@ $(window).on('scroll', function() {
 
     chapter = chapters[num];
     chapter_position = chapter.getBoundingClientRect().top;
-    console.log(chapter_position)
+    // console.log(chapter_position)
 
     // scrollToChapter = (chapter_position - winHeight/2) - winHeight;
 
    
     scrollTop = $(window).scrollTop()
-    console.log(chapter)
+    // console.log(chapter)
 
     // console.log(scrollTop)
-    console.log(winHeight/2)
+    // console.log(winHeight/2)
 
     if (chapter_position <= winHeight/2){
         chapter.style.opacity = 1;
@@ -163,9 +163,9 @@ $(window).on('scroll', function() {
     // }
 
 
-    if( scrollTop > 200){
+    if( scrollTop > winHeight*0.2){
         var scrollCoef = 0.001;
-        var res = scrollCoef * (scrollTop-200)
+        var res = scrollCoef * (scrollTop-winHeight*0.2)
         var res2 = 1 - res;
         if (res2>=0.1){
             $('.content_wrap').css({
@@ -368,15 +368,37 @@ $(window).on('scroll', function() {
      if (AccompanyVideo_position <= 100 && AccompanyNumber == 0){
         setTimeout(function(){
             AccompanyVideo.play()
-            AccompanyNumber = 1;
+            setTimeout(function(){
+                $(".Accompany__title1").css({'transition' : 'all 0.8s'});
+                $(".Accompany__title2").css({'transition' : 'all 0.8s'});
+
+                $(".Accompany__title1").css({'visibility' : 'visible'});
+                $(".Accompany__title2").css({'visibility' : 'visible'});
+
+                $(".Accompany__title1").css({'opacity' : '1'});
+                setTimeout(function(){
+                    $(".Accompany__title1").css({'opacity' : '0'});
+                    setTimeout(function(){
+                        $(".Accompany__title2").css({'opacity' : '1'});
+                    },500)
+                },2500)
+            },3000)
         }, 500)
-       
+        AccompanyNumber = 1;
     }
 
-    if (AccompanyVideo_position > 100 && AccompanyNumber == 1){
+    if (AccompanyVideo_position > 700 && AccompanyNumber == 1){
             AccompanyVideo.pause()
             setTimeout(function(){
                 AccompanyVideo.currentTime = 0;
+                $(".Accompany__title1").css({'transition' : 'all 0s'});
+                $(".Accompany__title2").css({'transition' : 'all 0s'});
+
+                $(".Accompany__title1").css({'visibility' : 'hidden'});
+                $(".Accompany__title2").css({'visibility' : 'hidden'});
+
+                $(".Accompany__title1").css({'opacity' : '0'});
+                $(".Accompany__title2").css({'opacity' : '0'});
             },1500)
             AccompanyNumber = 0;
             
@@ -409,19 +431,29 @@ $(window).on('scroll', function() {
 
 $("#Menu").on("click", function(){
     $(".menu__page").css({'display' : 'block'});
-    // $('.main').css({'visibility' : 'hidden'});
-    // $('#Logo').css({'visibility' : 'hidden'});
+    setTimeout(function(){
+        $(".menu__page").css({'transition' : 'all 0.3s'});
+        $(".main").css({'transition' : 'all 0.3s'});
+
+        $(".menu__page").css({'opacity' : '1'});
+        $(".main").css({'opacity' : '0'});
+
+    },300)
+    $('body').css({'overflow-y' : 'hidden'})
 });
 
 
 $(document).on('click', '#PageBack', function() {
-    $(".menu__page").css({'display' : 'none'});
-    // $('.main').css({'visibility' : 'visible'});
-    // $('#Logo').css({'visibility' : 'visible'});
+    setTimeout(function(){
+        $(".menu__page").css({'transition' : 'all 0.3s'});
+        $(".main").css({'transition' : 'all 0.3s'});
+
+        $(".menu__page").css({'opacity' : '0'});
+        $(".main").css({'opacity' : '1'});
+    },300)
+    setTimeout(function(){
+        $(".menu__page").css({'display' : 'none'});
+    },1200)
+    $('body').css({'overflow-y' : 'scroll'})
 });
 
-
-// $("#PageBack").on("click", function(){
-//     $(".menu__page").css({'display' : 'none'});
-//     $('.main').css({'display' : 'block'});
-// });
