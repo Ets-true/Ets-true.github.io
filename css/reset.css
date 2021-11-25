@@ -33,7 +33,7 @@ dd {
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
+  /* text-rendering: optimizeSpeed; */
   line-height: 1.5;
 }
 
@@ -131,24 +131,24 @@ a{
 body{
   margin: 0;
   padding: 0;
-  -webkit-font-smoothing: antialiased;
+  /* -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility; */
 }
 
 img {
-  image-rendering: optimizeQuality;
+  /* image-rendering: optimizeQuality; */
   image-rendering: -webkit-optimize-contrast;
-  -webkit-backface-visibility: hidden; 
-  -ms-transform: translateZ(0); /* IE 9 */
-  -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
-  transform: translateZ(0);
+  /* -webkit-backface-visibility: hidden;  */
+  /* -ms-transform: translateZ(0); 
+  -webkit-transform: translateZ(0); 
+  transform: translateZ(0); */
 }
 
 svg{
   image-rendering: -webkit-optimize-contrast;
-  text-rendering:auto;
-  shape-rendering: geometricPrecision;
+  /* text-rendering:auto;
+  shape-rendering: geometricPrecision; */
   /* -webkit-text-stroke: 1px */
   /* stroke-linejoin: arcs; */
 

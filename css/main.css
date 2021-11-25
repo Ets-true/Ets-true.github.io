@@ -1,10 +1,10 @@
 body{
-    image-rendering: -webkit-optimize-Quality;
-    -webkit-font-smoothing: none;
+    /* image-rendering: -webkit-optimize-Quality; */
+    /* -webkit-font-smoothing: none;
 
     -moz-user-select: none;
     -khtml-user-select: none;
-    user-select: none;  
+    user-select: none;   */
 }
 
 
@@ -371,8 +371,8 @@ span{
 }
 
 #lottie-1 svg{
-    image-rendering: -webkit-optimize-Quality;
-    -webkit-filter: blur(0.000001px);
+    /* image-rendering: -webkit-optimize-Quality; */
+    /* -webkit-filter: blur(0.000001px); */
     
 }
 
@@ -1020,12 +1020,12 @@ button{
 @media(max-width: 1024px) {
     /* calc(21px + (27 - 21) * ((70vw - 375px) / (1024 - 375))) */
     body{
-        image-rendering: -webkit-optimize-Quality;
-        -webkit-font-smoothing: none;
+        /* image-rendering: -webkit-optimize-Quality; */
+        /* -webkit-font-smoothing: none; */
     
-        -moz-user-select: none;
+        /* -moz-user-select: none;
         -khtml-user-select: none;
-        user-select: none;  
+        user-select: none;   */
     }
     
     
