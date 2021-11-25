@@ -116,6 +116,19 @@ var formNumber = 0;
 
 
 
+var winHeightSpec = $(window).height();
+var winWidthSpec = $(window).width()
+
+
+if (winHeightSpec/winWidthSpec >= 0.48958){
+    var SpecVar = 0;
+} else if (winHeightSpec/winWidthSpec < 0.48958){
+    var SpecVar = (winWidthSpec*0.48958 - winHeightSpec)/2
+}
+
+// console.log(SpecVar)
+
+
 
 
 $(window).on('scroll', function() {
@@ -189,9 +202,9 @@ $(window).on('scroll', function() {
     // console.log(scrollT)
 
     
+    
 
-
-    var video_up_position = video_up.getBoundingClientRect().top;
+    var video_up_position = video_up.getBoundingClientRect().top - SpecVar;
 
     var video_up_height = $(".video_up").height()
     var video_up_height_2 = video_up_height/2
@@ -200,7 +213,10 @@ $(window).on('scroll', function() {
 
     scrollToSlider = winHeight_2 - video_up_height_2;
 
-  
+    // console.log(video_up_position)
+    // console.log(winHeight_2)
+    // console.log(scrollToSlider)
+    
 
     if(scrollToSlider >= video_up_position && number==0){
             number=1
@@ -365,7 +381,8 @@ $(window).on('scroll', function() {
 
      var AccompanyVideo_position = AccompanyVideo_block.getBoundingClientRect().top;
 
-     if (AccompanyVideo_position <= 100 && AccompanyNumber == 0){
+     if (AccompanyVideo_position <= winHeight/4 && AccompanyNumber == 0){
+        AccompanyNumber = 1;
         setTimeout(function(){
             AccompanyVideo.play()
             setTimeout(function(){
@@ -381,28 +398,29 @@ $(window).on('scroll', function() {
                     setTimeout(function(){
                         $(".Accompany__title2").css({'opacity' : '1'});
                     },500)
-                },2500)
-            },3000)
+                },3300)
+            },4000)
         }, 500)
-        AccompanyNumber = 1;
     }
 
-    if (AccompanyVideo_position > 700 && AccompanyNumber == 1){
-            AccompanyVideo.pause()
-            setTimeout(function(){
-                AccompanyVideo.currentTime = 0;
-                $(".Accompany__title1").css({'transition' : 'all 0s'});
-                $(".Accompany__title2").css({'transition' : 'all 0s'});
+    // if (AccompanyVideo_position > winHeight && AccompanyNumber == 1){
+    //         AccompanyVideo.pause()
+    //         setTimeout(function(){
+    //             AccompanyVideo.currentTime = 0;
+    //             $(".Accompany__title1").css({'transition' : 'all 0s'});
+    //             $(".Accompany__title2").css({'transition' : 'all 0s'});
 
-                $(".Accompany__title1").css({'visibility' : 'hidden'});
-                $(".Accompany__title2").css({'visibility' : 'hidden'});
+    //             $(".Accompany__title1").css({'visibility' : 'hidden'});
+    //             $(".Accompany__title2").css({'visibility' : 'hidden'});
 
-                $(".Accompany__title1").css({'opacity' : '0'});
-                $(".Accompany__title2").css({'opacity' : '0'});
-            },1500)
-            AccompanyNumber = 0;
+    //             $(".Accompany__title1").css({'opacity' : '0'});
+    //             $(".Accompany__title2").css({'opacity' : '0'});
+    //             AccompanyNumber = 0;
+    //         },10000)
             
-    }
+    // }
+
+    console.log(AccompanyNumber)
 
     // if (AccompanyVideo_position > winHeight/2){
         

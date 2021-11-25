@@ -69,7 +69,7 @@ var scrollToElem_2 = (lottie_Wrap_Position_2 + lottie_Animation_Height_2_2 + Sli
 function animatebodymovin_2(duration, animObject) {
    var winScrollTop = $(this).scrollTop();
    var scrollPosition_2 = winScrollTop - scrollToElem_2;
-   console.log(scrollPosition_2)
+   // console.log(scrollPosition_2)
    if(scrollPosition_2 >= 0){
        var maxFrames = animObject.totalFrames;
        var frame = (maxFrames / 100) * (scrollPosition_2 / (duration*1.05 / 100));
