@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Department</title>
+    <title> Department </title>
+    <link rel="shortcut icon" type="image/png" href="favicon.ico?v=1">
 
 
     <!-- <link rel="preload" href="js/jquery.min.js" as="script">
@@ -20,11 +21,11 @@
     <link rel="preload" href="js/lottieRealize.js" as="script"> -->
 
 
-    <link rel="preload" as="video" type="video/mp4" href="IT.mp4" />
+    <!-- <link rel="preload" as="video" type="video/mp4" href="IT.mp4" />
     <link rel="preload" as="video" type="video/mp4" href="Art.mp4" />
     <link rel="preload" as="video" type="video/mp4" href="Industry.mp4" />
     <link rel="preload" as="video" type="video/mp4" href="science.mp4" />
-    <link rel="preload" as="video" type="video/mp4" href="media.mp4" />
+    <link rel="preload" as="video" type="video/mp4" href="media.mp4" /> -->
 
     <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
     <link rel="stylesheet" type="text/css" href="css/reset.css"/>
@@ -119,6 +120,20 @@
 
         <div class="section chapter">
             <span class="chapter__title">То, что заметят</span>
+        </div>
+
+        <div class="MobileText">
+            Мобильная версия сайта,<br>
+            в первую очередь,<br>
+            нужна для оперативного<br>
+            доступа к основной<br>
+            информации<br>
+            и контактным данным.<br>
+            Для получения<br>
+            полного впечатления<br>
+            лучше всего заходить <br>
+            с домашнего или<br>
+            рабочего компьютера<br>
         </div>
 
         <div class="lottie_wrap">
@@ -300,21 +315,26 @@
     
         <div class="form__wrapper">
             <div class="form__background" >tmentdepar</div>
+            <div class="MobileBackground">
+                <div class="dep">dep</div>
+                <div class="artm">artm</div>
+                <div class="ent">ent</div>
+            </div>
             <div class="form" >
                 <form id="MailForm" autocomplete="off">
                     <div class="form__line">
                         <label>Ваше имя</label>
-                        <input class="nameUP" type="text" id="name" name="user_name">
+                        <input placeholder=" " class="nameUP" type="text" id="name" name="user_name">
                     </div>
                 
                     <div class="form__line">
                         <label>Номер телефона</label>
-                        <input type="text" id="phone" name="user_phone">
+                        <input placeholder=" " type="text" id="phone" name="user_phone">
                     </div>
                 
                     <div class="form__line">
                         <label>Название компании</label>
-                        <input type="text" id="company" name="user_company">
+                        <input placeholder=" " type="text" id="company" name="user_company">
                     </div>
                 
                     <div class="buttonSuccess">
@@ -326,9 +346,17 @@
             </div>
 
             <div class="form__info">
-                <div class="info__phone">+7 (903) 621 00 00</div>
-                <div class="info__copyright">Copyright  2021</div>
-                <div class="info__mail">connect@departmentview.ru</div>
+                <div class="info__phone">
+                    <div class="phone__icon_mobile"><img src="phone.svg" alt=""></div>
+                    +7 (903) 621 00 00
+                </div>
+                <div class="info__copyright">
+                    Copyright  2021
+                </div>
+                <div class="info__mail">
+                    <div class="mail__icon_mobile"><img src="mail.svg" alt=""></div>
+                    connect@departmentview.ru
+                </div>
             </div>
         </div>
         

@@ -977,6 +977,21 @@ button{
     opacity: 1;
 }
 
+.MobileText{
+    display: none;
+}
+.MobileBackground {
+    display: none;
+}
+.phone__icon_mobile{
+    display: none;
+}
+.mail__icon_mobile{
+    display: none;
+}
+
+
+
 @keyframes mouse_animation {
     0%{
         transform: translateY(-60px);
@@ -1038,16 +1053,17 @@ button{
     
     .logo {
         margin-top: 12px;
+        margin-left: 20px;  
     }
 
     .logo_top {
-        font-size: 30px;        
+        font-size: 20px;        
     }
 
     .logo_bottom {
         margin-top: -8px;
-        font-size: 14px;
-        letter-spacing: 2.76px;
+        font-size: 11px;
+        letter-spacing: 1px;
     }
     
     
@@ -1144,6 +1160,18 @@ button{
         opacity: 1;
         transition: all 1.2s;
     }
+
+    .MobileText{
+        transition: all 0.5s;
+        display: block;
+        font-family: "Montserrat-Light";
+        font-size: 20px;
+        text-align: center;
+        line-height: 30px;
+        opacity: 0;
+        width: auto;
+        height: auto;
+    }
     
     
     
@@ -1165,40 +1193,41 @@ button{
     
     
     .clients {
-        margin-top: 400px;
-        padding-left: 345px;
+        margin-top: 236px;
+        padding-left: 16px;
     }
     .clients__title {
-        font-family: "SourceSerif4-Regular";
-        font-size: 35px;
-        margin-bottom: 95px;
-        margin-left: 50px;
+        font-size: 20px;
+        margin-bottom: 67px;
+        margin-left: 7px;
     }
+
     .clients__client {
-        display: flex;
-        margin-bottom: 75px;
+        width: auto;
+        display: block;
+        margin-bottom: 156px;
     }
+
     .client__image {
         cursor: pointer;
         transition: all 2s;
-        width: 642px;
-        height: 192px;
-        /* background-position: center; */
-        border: 1px solid black;
+        width: 343px;
+        height: 178px;
     }
     
     .client__image a{
-        width: 100%;
-        height: 100%;
+        width: 343px;
+        height: 178px;
     }
     
     
     .client__blur{
         transition: all 5s;
-        width: 100%;
-        height: 100%;
+        width: 339px;
+        height: 175px;
+        
         background-color: rgba( 255, 255, 255, 0.06 );
-        backdrop-filter: blur( 3px );
+        backdrop-filter: blur( 2px );
         -webkit-backdrop-filter: blur( 3px );
     }
     
@@ -1214,13 +1243,20 @@ button{
         transition: all 2s;
         background-position: 0% 20%;
     }
+
+
+    .RM {
+        background-image: url("../client_RM.jpg");
+        background-size: 100% 350% ;
+        background-position: 0% 0%;
+    }
     
     
     
     .Oborona{
         background-image: url("../client_Oborona.jpg");
-        background-size: 100% 900% ;
-        background-position: 0% 0%;
+        background-size: 200% 700% ;
+        background-position: 50% 0%;
     }
     
     .Oborona:hover{
@@ -1230,7 +1266,7 @@ button{
     
     .Kiryakov{
         background-image: url("../client_Kiryakov.jpg");
-        background-size: 100% 400% ;
+        background-size: 100% 300% ;
         background-position: 0% 0%;
     }
     
@@ -1239,16 +1275,8 @@ button{
         background-position: 0% 80%;
     }
     
-    .RM {
-        background-image: url("../client_RM.jpg");
-        background-size: 100% 570% ;
-        background-position: 0% 0%;
-    }
     
-    /* .RM.client__blur{
-        backdrop-filter: blur( 0px ); 
-        -webkit-backdrop-filter: blur( 0px );
-    } */
+    
     
     .RM:hover {
         transition: all 2s;
@@ -1257,7 +1285,7 @@ button{
     
     .PSK{
         background-image: url("../client_psk.jpg");
-        background-size: 100% 800% ;
+        background-size: 100% 500% ;
         background-position: 0% 0%;
     }
     
@@ -1268,7 +1296,7 @@ button{
     
     .Niktel{
         background-image: url("../client_Niktel.jpg");
-        background-size: 100% 800% ;
+        background-size: 100% 500% ;
         background-position: 0% 0%;
     }
     
@@ -1278,16 +1306,16 @@ button{
     }
     
     .client__link_block{
-        width: 247px;
-        margin-left: 132px;
-        margin-top: 79px;
-        /* background-color: red; */
+        width: 185px;
+        margin-left: 0;
+        margin: auto;
+        margin-top: 35px;
         text-align: center;
     }
     
     .client__link {
         font-family: "Montserrat-Light";
-        font-size: 27px;
+        font-size: 20px;
         /* margin: auto; */
         position: relative;
         
@@ -1295,161 +1323,197 @@ button{
     
     
     .client__link::after {
-        content: '';
-        position: absolute;
-        top: 130%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 0;
-        height: 1px;
-        background-color: black;
-    }
-    
-    .client__link:hover::after {
-        transition: all 0.7s;
-        content: '';
-        position: absolute;
         top: 130%;
         left: 50%;
         transform: translateX(-50%);
         width: 65%;
         height: 1px;
-        background-color: black;
     }
-    
-    
-    
     
     
     .form__wrapper{
         margin: auto;
-        margin-top: 300px;
+        margin-top: 0px;
         position: relative;
-        /* background-color: green;
-        height: 100vh; */
-    
-        
     }
     
     .form__background{
-        position: absolute;
-        top: 27px;
-        left: 16px;
-        font-family: "SourceSerif4-Regular";
-        font-size: 280px;
-        opacity: 0.03;
-        letter-spacing: 23px;
-        /* -moz-user-select: none;
-        -khtml-user-select: none;
-        user-select: none;    */
+       display: none;
     }
     
     #MailForm{
-        padding-top: 282px;
-        width: 585px;
+        padding-top: 0px;
+        width: 272px;
         margin: auto;
-        text-align: right;
+        text-align: left;
     }
     
     label{
-        font-family: "Montserrat-LightItalic";
-        font-size: 25px;
-        margin-right: 45px;
-        text-align: right;
+        /* display: none; */
+        font-family: "Montserrat-Regular";
+        font-size: 20px;
+        margin-right: 0px;
+        margin-left: 13px;
+        text-align: left;
         /* margin-bottom: 20px; */
+        display: block;
         
     }
     
     
     input{
         transition: all 0.5s;
-        width: 259px;
-        transform: translateY(0px);
-        /* border: 0px; */
-        border: 1px;
-        border-bottom-style: solid;
-        border-bottom-color: black;
-        font-family: "Montserrat-LightItalic";
-        font-size: 25px;
-        outline: none;
-        text-align: center;
+        width: 272px;
+        transform: translateY(-20px);
+        font-family: "Montserrat-Light";
+        font-size: 20px;
+        text-align: left;
+        padding-left: 13px;
         background: rgba(255, 255, 255, 0);
         position: relative;
-        margin-bottom: 4px;
-        
+        margin-bottom: 96px;
     }
+
+   
     
     
-    input:focus{
-        transition: all 0.5s;
-        transform: translateY(3px);
+    
+
+    input:placeholder-shown:not(:focus) {
+        transform: translateY(-20px);
     }
+
+    input:placeholder-shown:focus {
+        transform: translateY(4px);
+    }
+
+    input:not(:placeholder-shown):focus {
+        transform: translateY(4px);
+    }
+      
+    input:not(:placeholder-shown):not(:focus) {
+        transform: translateY(4px);
+    }
+      
+    
     
     
     
     
     .buttonSuccess{
+        margin-left: 0px;
         margin: auto;
-        margin-left: 123px;
-        width: 460px;
-        display: flex;
+        width: auto;
+        display: block;
         justify-content: center;
-        /* background-color: green; */
+        text-align: center;
     }
     
     
     button{
+        transition: all 0.5s;
         cursor: pointer;
-        font-family: "Montserrat-Italic";
-        font-size: 25px;
-        margin-right: 52px;
-        margin-top: 47px;
-        border: none; 
-        outline: none; 
+        font-family: "Montserrat-SemiBold";
+        font-size: 20px;
+        margin-left: 0;
+        margin: auto;
+        margin-top: -20px;
         background-color: white;
-
+        opacity: 1;
+        z-index: 2;
     }
     
     .success{
         transition: all 0.5s;
+        display: none;
+        transform: translateY(-35px);
+        transition: all 0.5s;
         opacity: 0;
-        /* background-color: red; */
-        font-family: "Montserrat-Italic";
-        font-size: 25px;
-        margin-top: 47px;
+        font-family: "Montserrat-Semibold";
+        font-size: 20px;
+        margin-top: 0px;
+        z-index: 0;
     }
     
     
     .form__info {
-        padding-top: 317px;
-        padding-left: 150px;
-        padding-right: 140px;
-        padding-bottom: 74px;
+        margin-top: 129px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
         width: 100%;
-        display: flex;
+        display: grid;
         font-family: 'Montserrat-Light';
-        /* justify-content: space-between; */
     }
 
     .info__phone {
-        font-size: 19px;
-        margin-right: 542px;
+        font-size: 16px;
+        margin-right: 0px;
+        margin-left: 40px;
         -moz-user-select: text;
         -khtml-user-select: text;
         user-select: text;
+        order: 2;
+        display: flex;
+        margin-bottom: 190px;
     }
 
+    .phone__icon_mobile{
+        display: block;
+        width: 22px;
+        height: 22px;
+        margin-right: 15px;
+    }
+    
     .info__copyright {
-        font-size: 20px;
-        margin-right: 473px;
-        transform: translateX(7px);
+        font-size: 16px;
+        margin-right: 0px;
+        transform: translateX(0);
+        order: 3;
+        margin: auto;
+        margin-bottom: 94px;
     }
 
     .info__mail {
-        font-size: 20px;
+        font-size: 18px;
+        margin-bottom: 35px;
+        margin-left: 40px;
         -moz-user-select: text;
         -khtml-user-select: text;
         user-select: text;
+        order: 1;
+        display: flex;
+    }
+
+    .mail__icon_mobile{
+        display: block;
+        width: 25px;
+        height: 17px;
+        margin-right: 14px;
+        transform:translateY(6px)
+    }
+
+    .MobileBackground {
+        position: absolute;
+        top: -70px;
+        left: 0;
+        font-family: "SourceSerif4-Regular";
+        font-size: 148px;
+        opacity: 0.03;
+        /* letter-spacing: 13px; */
+    }
+
+    .dep {
+        text-align: left;
+        margin-bottom: 75px;
+    }
+    .artm {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .ent {
+        text-align: right;
     }
     
     
