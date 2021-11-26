@@ -12,13 +12,13 @@ header{
     /* transition: all 0.5s; */
     width: 100%;
     height: auto;
-    background-color: #fff;
+    /* background-color: #fff; */
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
     z-index: 100;
-    mix-blend-mode: lighten
+    /* mix-blend-mode: lighten */
 }
 .menu{
     cursor: pointer;
@@ -564,6 +564,11 @@ img{
     position: sticky;
     top: 0;
     top: 2%;
+    /* background-color: red;
+    width: 1780px;
+    height: 820px;
+    overflow: hidden;
+    margin: auto; */
 }
 
 
