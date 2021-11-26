@@ -10,11 +10,15 @@ body{
 
 header{
     /* transition: all 0.5s; */
+    width: 100%;
+    height: auto;
+    background-color: #fff;
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
     z-index: 100;
+    mix-blend-mode: lighten
 }
 .menu{
     cursor: pointer;
@@ -1050,20 +1054,38 @@ button{
         margin: auto;
     }
 
+    #Logo{
+        margin: auto;
+        /* transform: translateX(-5px); */
+    }
+
+    header{
+        text-align: center;
+        width: 100vw;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
     
     .logo {
-        margin-top: 12px;
-        margin-left: 20px;  
+        margin:0;
+       
+        /* margin-top: 12px;
+        margin-left: 20px; */
+        /* left: 50%;
+        transform: translateX(-50%); */
     }
 
     .logo_top {
-        font-size: 20px;        
+        font-size: 20px;
+        
     }
 
     .logo_bottom {
         margin-top: -8px;
         font-size: 11px;
         letter-spacing: 1px;
+        
     }
     
     
