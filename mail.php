@@ -15,18 +15,18 @@ echo $name,$phone, $company;
 $mail->isSMTP();                                      
 $mail->Host = 'smtp.mail.ru';  																							
 $mail->SMTPAuth = true;                             
-$mail->Username = 'kira22082001@mail.ru'; 
+$mail->Username = 'contact@departmentview.ru'; 
 $mail->Password = 'Eshkeree1';
 $mail->SMTPSecure = 'ssl';                            
 $mail->Port = 465; 
 
-$mail->setFrom('kira22082001@mail.ru'); 
-$mail->addAddress('kira2208@gmail.com');     
+$mail->setFrom('contact@departmentview.ru'); 
+$mail->addAddress('contact@departmentview.ru');     
 
 $mail->isHTML(true);                                  
 
-$mail->Subject = 'Заявка с тестового сайта';
-$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Компания этого пользователя: ' .$company;
+$mail->Subject = 'Заяка с сайта';
+$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Компания клиента: ' .$company;
 $mail->AltBody = '';
 
 $mail->send();

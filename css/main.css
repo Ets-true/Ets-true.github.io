@@ -1252,15 +1252,15 @@ button{
         height: 175px;
         
         background-color: rgba( 255, 255, 255, 0.06 );
-        backdrop-filter: blur( 2px );
+        backdrop-filter: blur( 3px );
         -webkit-backdrop-filter: blur( 3px );
     }
     
     .client__image:hover .client__blur{
         transition: all 0.1s;
         background-color: rgba( 255, 255, 255, 0);
-        backdrop-filter: blur( 0px );
-        -webkit-backdrop-filter: blur( 0px );
+        backdrop-filter: blur( 3px );
+        -webkit-backdrop-filter: blur( 3px );
     }
     
     
