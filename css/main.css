@@ -1,3 +1,6 @@
+
+
+
 body{
     /* image-rendering: -webkit-optimize-Quality; */
     /* -webkit-font-smoothing: none;
@@ -12,13 +15,13 @@ header{
     /* transition: all 0.5s; */
     width: 100%;
     height: auto;
-    /* background-color: #fff; */
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
     z-index: 100;
-    /* mix-blend-mode: lighten */
+    /* background-color: #fff;
+    mix-blend-mode: lighten */
 }
 .menu{
     cursor: pointer;
@@ -564,11 +567,13 @@ img{
     position: sticky;
     top: 0;
     top: 2%;
+    /* overflow: hidden */
     /* background-color: red;
     width: 1780px;
-    height: 820px;
+    height: 780px;
     overflow: hidden;
-    margin: auto; */
+    margin: auto;
+    background-color: red; */
 }
 
 
@@ -584,6 +589,7 @@ img{
     height: 100px;
     opacity: 0;
     z-index: 50;
+    width: 1000px;
 }
 .Accompany__title2 {
     font-family: "SourceSerif4-Regular";
@@ -603,8 +609,7 @@ img{
     height: 836px;
     margin: auto; 
     overflow: hidden;
-    position: relative;
-  
+    position: relative;  
 }
 
 
@@ -670,7 +675,7 @@ img{
 
 
 .Oborona{
-    background-image: url("../client_Oborona.jpg");
+    background-image: url("../media/clients/client_Oborona.jpg");
     background-size: 100% 900% ;
     background-position: 0% 0%;
 }
@@ -681,7 +686,7 @@ img{
 }
 
 .Kiryakov{
-    background-image: url("../client_Kiryakov.jpg");
+    background-image: url("../media/clients/client_Kiryakov.jpg");
     background-size: 100% 400% ;
     background-position: 0% 0%;
 }
@@ -692,7 +697,7 @@ img{
 }
 
 .RM {
-    background-image: url("../client_RM.jpg");
+    background-image: url("../media/clients/client_RM.jpg");
     background-size: 100% 570% ;
     background-position: 0% 0%;
 }
@@ -708,7 +713,7 @@ img{
 }
 
 .PSK{
-    background-image: url("../client_psk.jpg");
+    background-image: url("../media/clients/client_psk.jpg");
     background-size: 100% 800% ;
     background-position: 0% 0%;
 }
@@ -719,7 +724,7 @@ img{
 }
 
 .Niktel{
-    background-image: url("../client_Niktel.jpg");
+    background-image: url("../media/clients/client_Niktel.jpg");
     background-size: 100% 800% ;
     background-position: 0% 0%;
 }
@@ -1000,51 +1005,46 @@ button{
 }
 
 
+:root{
+    --animationHeight1: -60px;
+    --animationHeight2: -80px;
+}
+
 
 @keyframes mouse_animation {
     0%{
-        transform: translateY(-60px);
+        transform: translateY(var(--animationHeight1));
     }
     12.5%{
-        transform: translateY(-80px);
+        transform: translateY(var(--animationHeight2));
     }
     25%{
-        transform: translateY(-60px);
+        transform: translateY(var(--animationHeight1));
     }
 
     37.5%{
-        transform: translateY(-80px);
+        transform: translateY(var(--animationHeight2));
     }
 
     50%{
-        transform: translateY(-60px);
+        transform: translateY(var(--animationHeight1));
     }
     100%{
-        transform: translateY(-60px);
+        transform: translateY(var(--animationHeight1));
     }
 }
 
 
 
 @media(max-width: 1024px) {
-    /* calc(21px + (27 - 21) * ((70vw - 375px) / (1024 - 375))) */
-    body{
-        /* image-rendering: -webkit-optimize-Quality; */
-        /* -webkit-font-smoothing: none; */
-    
-        /* -moz-user-select: none;
-        -khtml-user-select: none;
-        user-select: none;   */
-    }
-    
-    
     header{
-        /* transition: all 0.5s; */
         position: fixed;
         top: 0;
         left: 0;
         display: flex;
         z-index: 100;
+        background-color: #fff;
+        /* mix-blend-mode: lighten */
     }
 
     .menu{
@@ -1061,7 +1061,6 @@ button{
 
     #Logo{
         margin: auto;
-        /* transform: translateX(-5px); */
     }
 
     header{
@@ -1074,11 +1073,6 @@ button{
     
     .logo {
         margin:0;
-       
-        /* margin-top: 12px;
-        margin-left: 20px; */
-        /* left: 50%;
-        transform: translateX(-50%); */
     }
 
     .logo_top {
@@ -1273,7 +1267,6 @@ button{
 
 
     .RM {
-        background-image: url("../client_RM.jpg");
         background-size: 100% 350% ;
         background-position: 0% 0%;
     }
@@ -1281,7 +1274,6 @@ button{
     
     
     .Oborona{
-        background-image: url("../client_Oborona.jpg");
         background-size: 200% 700% ;
         background-position: 50% 0%;
     }
@@ -1292,7 +1284,6 @@ button{
     }
     
     .Kiryakov{
-        background-image: url("../client_Kiryakov.jpg");
         background-size: 100% 300% ;
         background-position: 0% 0%;
     }
@@ -1311,7 +1302,6 @@ button{
     }
     
     .PSK{
-        background-image: url("../client_psk.jpg");
         background-size: 100% 500% ;
         background-position: 0% 0%;
     }
@@ -1322,7 +1312,6 @@ button{
     }
     
     .Niktel{
-        background-image: url("../client_Niktel.jpg");
         background-size: 100% 500% ;
         background-position: 0% 0%;
     }
@@ -1553,6 +1542,11 @@ button{
 
 
 @media(min-width: 1024px) and (max-width: 1919px) {
+
+    :root{
+        --animationHeight1: -50px;
+        --animationHeight2: -65px;
+    }
 
     .menu{
         width: calc(13.25px + (25 - 13.25) * ((100vw - 1024px) / (1920 - 1024)));
@@ -1810,16 +1804,15 @@ button{
     
 
     .Accompany__title1 {
-        width: 1000px;
-        font-size: 35px;
-        top: 50px;
-        height: 100px;
-        background-color: red;
+        width: calc(530px + (1000 - 530) * ((100vw - 1024px) / (1920 - 1024)));
+        font-size: calc(18.5px + (35 - 18.5) * ((100vw - 1024px) / (1920 - 1024)));
+        top: calc(26.5px + (50 - 26.5) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(53px + (100 - 53) * ((100vw - 1024px) / (1920 - 1024)));
     }
     .Accompany__title2 {
-        font-size: 35px;
-        top: 50px;
-        height: 100px;
+        font-size: calc(18.5px + (35 - 18.5) * ((100vw - 1024px) / (1920 - 1024)));
+        top: calc(26.5px + (50 - 26.5) * ((100vw - 1024px) / (1920 - 1024)));
+        height: calc(53px + (100 - 53) * ((100vw - 1024px) / (1920 - 1024)));
     }
 
 

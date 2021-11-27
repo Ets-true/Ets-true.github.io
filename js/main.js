@@ -1,6 +1,33 @@
 $(document).ready(function() {
+
+  
     if (document.documentElement.clientWidth >=1024) {
 
+        document.getElementById('title__IT_ID').innerHTML = 
+        ' <video class="title__video" id="IT__titleVideo"  width="100%" height="50%" no-controls autoplay loop muted ><source src="media/video/IT_title.mp4"/></video>'
+        document.getElementById('title__Art_ID').innerHTML = 
+        ' <video class="title__video" id="Art__titleVideo"  width="100%" height="50%" no-controls autoplay loop muted ><source src="media/video/Art_title.mp4"/></video>'
+        document.getElementById('title__Industry_ID').innerHTML = 
+        ' <video class="title__video" id="Industry__titleVideo"  width="100%" height="50%" no-controls autoplay loop muted ><source src="media/video/Industry_title.mp4"/></video>'
+        document.getElementById('title__Science_ID').innerHTML = 
+        ' <video class="title__video" id="Science__titleVideo"  width="100%" height="50%" no-controls autoplay loop muted ><source src="media/video/Science_title.mp4"/></video>'
+        document.getElementById('title__Media_ID').innerHTML = 
+        ' <video class="title__video" id="Media__titleVideo"  width="100%" height="50%" no-controls autoplay loop muted ><source src="media/video/Media_title.mp4"/></video>'
+
+
+        document.getElementById('IT_block').innerHTML = 
+        '<video id="IT__backVideo" class="video_background" autoplay no-controls loop muted><source src="media/video/IT.mp4"/></video>'
+        document.getElementById('Art_block').innerHTML = 
+        '<video id="Art__backVideo" class="video_background" width="100%" height="50%" autoplay no-controls  loop muted ><source src="media/video/Art.mp4"/></video>'
+        document.getElementById('Industry_block').innerHTML = 
+        ' <video id="Industry__backVideo" class="video_background" width="100%" height="50%" autoplay no-controls  loop muted ><source src="media/video/Industry.mp4"/></video>'
+        document.getElementById('Science_block').innerHTML = 
+        '<video id="Science__backVideo" class="video_background" width="100%" height="50%" autoplay no-controls  loop muted ><source src="media/video/science.mp4"/></video>'
+        document.getElementById('Media_block').innerHTML = 
+        '<video id="Media__backVideo" class="video_background" width="100%" height="50%" autoplay no-controls loop muted ><source src="media/video/media.mp4"/></video>'
+
+        document.getElementById('AccompanyVideo_block').innerHTML = 
+        '<div class="Accompany__title1">Сопровождение.<br>Постепенное совершенствование каждой детали</div><div class="Accompany__title2">Поддерживаем работоспособность сайта, улучшаем функционал и обепечиваем безопасность</div><video id="AccompanyVideo" class="" width="100%" height="50%" no-controls muted ><source src="media/video/accompany.mp4"/></video>'
 
         var video = document.querySelector('.video__IT')
         // video.pause();
